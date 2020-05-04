@@ -1198,8 +1198,11 @@ the checks:</p>
 mainstream LSP clients (e. g. <code>VScode</code>, <code>Theia</code>, etc). Here are steps to
 achieve optimal results.</p>
 <ul>
-<li>Use Emacs 27+ with native json support. In order to validate that
-    you match this criteria do <code>M-: (functionp 'json-serialize) RET</code>.
+<li>Use Emacs 27+ with native json support. (Note: this requires that
+    you have [libjansson](<a href="http://www.digip.org/jansson/">http://www.digip.org/jansson/</a>) installed,
+    and that emacs was compiled with `–with-json` passed to
+    `./configure`.) You can check your installation for native json
+    support by running do <code>M-: (functionp 'json-serialize) RET</code>.
     Benchmarks show that Emacs 27 is <code>~15 times</code> faster than Emacs when
     using Elisp json parser implementation.</li>
 <li>
@@ -1707,21 +1710,21 @@ which provide server specific functionality.</p>
 <td>TeX, LaTeX, etc.</td>
 <td><a href="https://github.com/latex-lsp/texlab">texlab</a></td>
 <td>Yes</td>
-<td>cargo install –git <a href="https://github.com/latex-lsp/texlab.git">https://github.com/latex-lsp/texlab.git</a></td>
+<td>cargo install \-\-git <a href="https://github.com/latex-lsp/texlab.git">https://github.com/latex-lsp/texlab.git</a></td>
 <td></td>
 </tr>
 <tr>
 <td>TeX, LaTeX, etc.</td>
 <td><a href="https://github.com/latex-lsp/texlab">texlab</a></td>
 <td><a href="https://github.com/ROCKTAKEY/lsp-latex">lsp-latex</a></td>
-<td>cargo install –git <a href="https://github.com/latex-lsp/texlab.git">https://github.com/latex-lsp/texlab.git</a></td>
+<td>cargo install \-\-git <a href="https://github.com/latex-lsp/texlab.git">https://github.com/latex-lsp/texlab.git</a></td>
 <td></td>
 </tr>
 <tr>
 <td>Verilog/SystemVerilog</td>
 <td><a href="https://github.com/suoto/hdl_checker">hdl<sub>checker</sub></a></td>
 <td>Yes</td>
-<td>pip install hdl-checker –upgrade</td>
+<td>pip install hdl-checker \-\-upgrade</td>
 <td>No</td>
 </tr>
 <tr>

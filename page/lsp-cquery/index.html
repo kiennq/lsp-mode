@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-css/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-cquery/">
       
       
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>CSS/LessCSS/SASS/SCSS - LSP Mode</title>
+        <title>C++(cquery) - LSP Mode</title>
       
     
     
@@ -57,7 +57,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#csslesscsssassscss" class="md-skip">
+        <a href="#c" class="md-skip">
           Skip to content
         </a>
       
@@ -84,7 +84,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              CSS/LessCSS/SASS/SCSS
+              C++(cquery)
             
           </span>
         </div>
@@ -434,11 +434,80 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../lsp-cquery/" title="C++(cquery)" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        C++(cquery)
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="C++(cquery)" class="md-nav__link md-nav__link--active">
       C++(cquery)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalation" class="md-nav__link">
+    Instalation
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-yes-gdb-or-lldb" class="md-nav__link">
+    Debugger: Yes (gdb or lldb)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -494,80 +563,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        CSS/LessCSS/SASS/SCSS
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="CSS/LessCSS/SASS/SCSS" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../lsp-css/" title="CSS/LessCSS/SASS/SCSS" class="md-nav__link">
       CSS/LessCSS/SASS/SCSS
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalation" class="md-nav__link">
-    Instalation
-  </a>
-  
-    <nav class="md-nav" aria-label="Instalation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debugger-not-available" class="md-nav__link">
-    Debugger: Not available
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1403,8 +1403,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debugger-not-available" class="md-nav__link">
-    Debugger: Not available
+  <a href="#debugger-yes-gdb-or-lldb" class="md-nav__link">
+    Debugger: Yes (gdb or lldb)
   </a>
   
 </li>
@@ -1433,7 +1433,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/lsp-css.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/lsp-cquery.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1441,112 +1441,13 @@
                   
                 
                 
-                <h1 id="csslesscsssassscss">CSS/LessCSS/SASS/SCSS<a class="headerlink" href="#csslesscsssassscss" title="Permanent link">#</a></h1>
+                <h1 id="c">C++<a class="headerlink" href="#c" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For information about the LSP server, check the <a href="https://github.com/vscode-langservers/vscode-css-languageserver-bin">css</a>.</p>
+<p>For information about the LSP server, check the <a href="https://github.com/cquery-project/cquery">cquery</a>.</p>
 <h2 id="instalation">Instalation<a class="headerlink" href="#instalation" title="Permanent link">#</a></h2>
-<p><code>npm install -g vscode-css-languageserver-bin</code></p>
-<h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
+<p>For instruction on how to install, check <a href="https://github.com/cquery-project/cquery">here</a>.</p>
+<h3 id="debugger-yes-gdb-or-lldb">Debugger: Yes (gdb or lldb)<a class="headerlink" href="#debugger-yes-gdb-or-lldb" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
-<p><strong><code>lsp-css-experimental-custom-data</code></strong></p>
-<p><em>Default: <code>nil</code></em></p>
-<p>A list of JSON file paths that define custom CSS data that
-loads custom properties, at directives, pseudo classes /
-elements.</p>
-<hr />
-<p><strong><code>lsp-css-completion-trigger-property-value-completion</code></strong></p>
-<p><em>Default: <code>t</code></em></p>
-<p>By default, VS Code triggers property value completion after
-selecting a CSS property. Use this setting to disable this
-behavior.</p>
-<hr />
-<p><strong><code>lsp-css-validate</code></strong></p>
-<p><em>Default: <code>t</code></em></p>
-<p>Enables or disables all validations.</p>
-<hr />
-<p><strong><code>lsp-css-lint-compatible-vendor-prefixes</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<p>When using a vendor-specific prefix make sure to also include
-all other vendor-specific properties.</p>
-<hr />
-<p><strong><code>lsp-css-lint-vendor-prefix</code></strong></p>
-<p><em>Default: <code>warning</code></em></p>
-<p>When using a vendor-specific prefix, also include the standard
-property.</p>
-<hr />
-<p><strong><code>lsp-css-lint-duplicate-properties</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<p>Do not use duplicate style definitions.</p>
-<hr />
-<p><strong><code>lsp-css-lint-empty-rules</code></strong></p>
-<p><em>Default: <code>warning</code></em></p>
-<p>Do not use empty rulesets.</p>
-<hr />
-<p><strong><code>lsp-css-lint-import-statement</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<p>Import statements do not load in parallel.</p>
-<hr />
-<p><strong><code>lsp-css-lint-box-model</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<hr />
-<p><strong><code>lsp-css-lint-universal-selector</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<hr />
-<p><strong><code>lsp-css-lint-zero-units</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<p>No unit for zero needed.</p>
-<hr />
-<p><strong><code>lsp-css-lint-font-face-properties</code></strong></p>
-<p><em>Default: <code>warning</code></em></p>
-<hr />
-<p><strong><code>lsp-css-lint-hex-color-length</code></strong></p>
-<p><em>Default: <code>error</code></em></p>
-<p>Hex colors must consist of three or six hex numbers.</p>
-<hr />
-<p><strong><code>lsp-css-lint-arguments-in-color-function</code></strong></p>
-<p><em>Default: <code>error</code></em></p>
-<p>Invalid number of parameters.</p>
-<hr />
-<p><strong><code>lsp-css-lint-unknown-properties</code></strong></p>
-<p><em>Default: <code>warning</code></em></p>
-<p>Unknown property.</p>
-<hr />
-<p><strong><code>lsp-css-lint-valid-properties</code></strong></p>
-<p><em>Default: <code>nil</code></em></p>
-<p>A list of properties that are not validated against the
-‘unknownProperties‘ rule.</p>
-<hr />
-<p><strong><code>lsp-css-lint-ie-hack</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<p>IE hacks are only necessary when supporting IE7 and older.</p>
-<hr />
-<p><strong><code>lsp-css-lint-unknown-vendor-specific-properties</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<p>Unknown vendor specific property.</p>
-<hr />
-<p><strong><code>lsp-css-lint-property-ignored-due-to-display</code></strong></p>
-<p><em>Default: <code>warning</code></em></p>
-<hr />
-<p><strong><code>lsp-css-lint-important</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<hr />
-<p><strong><code>lsp-css-lint-float</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<hr />
-<p><strong><code>lsp-css-lint-id-selector</code></strong></p>
-<p><em>Default: <code>ignore</code></em></p>
-<p>Selectors should not contain IDs because these rules are too
-tightly coupled with the HTML.</p>
-<hr />
-<p><strong><code>lsp-css-lint-unknown-at-rules</code></strong></p>
-<p><em>Default: <code>warning</code></em></p>
-<p>Unknown at-rule.</p>
-<hr />
-<p><strong><code>lsp-css-trace-server</code></strong></p>
-<p><em>Default: <code>off</code></em></p>
-<p>Traces the communication between VS Code and the CSS language
-server.</p>
-<hr />
                 
                   
                     
@@ -1578,7 +1479,7 @@ server.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../lsp-crystal/" title="Crystal" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lsp-clangd/" title="C++(clangd)" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1587,19 +1488,19 @@ server.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Crystal
+                C++(clangd)
               </div>
             </div>
           </a>
         
         
-          <a href="../lsp-dhall/" title="Dhall" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../lsp-csharp/" title="C#" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Dhall
+                C#
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-pascal/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/remote/">
       
       
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Pascal/Object Pascal - LSP Mode - Language Server Protocol Support for Emacs</title>
+        <title>Remote - LSP Mode - Language Server Protocol Support for Emacs</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pascalobject-pascal" class="md-skip">
+        <a href="#remote" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Pascal/Object Pascal
+              Remote
             
           </span>
         </div>
@@ -159,7 +159,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../.." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link md-tabs__link--active">
           Home
         </a>
       
@@ -172,7 +172,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../languages/" class="md-tabs__link md-tabs__link--active">
+        <a href="../languages/" class="md-tabs__link">
           Languages
         </a>
       
@@ -260,10 +260,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
     
     <label class="md-nav__link" for="nav-1">
       Home
@@ -465,11 +467,87 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../remote/" title="Remote" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Remote
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Remote" class="md-nav__link md-nav__link--active">
       Remote
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tramp" class="md-nav__link">
+    TRAMP
+  </a>
+  
+    <nav class="md-nav" aria-label="TRAMP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-does-it-work" class="md-nav__link">
+    How does it work?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-configuration" class="md-nav__link">
+    Sample configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dealing-with-stderr" class="md-nav__link">
+    Dealing with stderr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -518,12 +596,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Languages
@@ -1013,80 +1089,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Pascal/Object Pascal
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Pascal/Object Pascal" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../lsp-pascal/" title="Pascal/Object Pascal" class="md-nav__link">
       Pascal/Object Pascal
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debugger-not-available" class="md-nav__link">
-    Debugger: Not available
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1523,23 +1530,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
+  <a href="#tramp" class="md-nav__link">
+    TRAMP
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
+    <nav class="md-nav" aria-label="TRAMP">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debugger-not-available" class="md-nav__link">
-    Debugger: Not available
+  <a href="#how-does-it-work" class="md-nav__link">
+    How does it work?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-configuration" class="md-nav__link">
+    Sample configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dealing-with-stderr" class="md-nav__link">
+    Dealing with stderr
   </a>
   
 </li>
@@ -1550,8 +1564,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
+  <a href="#docker" class="md-nav__link">
+    Docker
   </a>
   
 </li>
@@ -1568,7 +1582,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/lsp-pascal.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/remote.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1576,13 +1590,28 @@
                   
                 
                 
-                <h1 id="pascalobject-pascal">Pascal/Object Pascal<a class="headerlink" href="#pascalobject-pascal" title="Permanent link">#</a></h1>
-<h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For information about the LSP server, check the <a href="https://github.com/arjanadriaanse/pascal-language-server">pascal-language-server</a>.</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p>For instruction on how to install, check <a href="https://github.com/arjanadriaanse/pascal-language-server">here</a>.</p>
-<h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
-<h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+                <h1 id="remote">Remote<a class="headerlink" href="#remote" title="Permanent link">#</a></h1>
+<h2 id="tramp">TRAMP<a class="headerlink" href="#tramp" title="Permanent link">#</a></h2>
+<p>LSP mode has support for tramp buffers with the following requirements:</p>
+<ul>
+<li>The language server has to be present on the remote server.</li>
+<li>Having multi folder language server (like <a href="https://github.com/eclipse/eclipse.jdt.ls">Eclipse JDT LS</a>) cannot have local and remote workspace folders.</li>
+</ul>
+<h3 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">#</a></h3>
+<p><code>lsp-mode</code> detects whether a particular file is located on remote machine and looks for a client which matches current file and it is marked as <code>:remote?</code> t. Then <code>lsp-mode</code> starts the client through tramp.</p>
+<h3 id="sample-configuration">Sample configuration<a class="headerlink" href="#sample-configuration" title="Permanent link">#</a></h3>
+<p>Here it is example how you can configure python language server to work when using <code>TRAMP</code>. Note that if you are trying to convert existing language server configuration you should copy all of it's properties(e. g. <code>:request-handlers</code>, <code>activation-fn</code>, etc).</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nv">lsp-register-client</span>
+    <span class="p">(</span><span class="nv">make-lsp-client</span> <span class="nb">:new-connection</span> <span class="p">(</span><span class="nv">lsp-tramp-connection</span> <span class="s">&quot;&lt;insert your LS&#39;s binary name or path here&gt;&quot;</span><span class="p">)</span>
+                     <span class="nb">:major-modes</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">python-mode</span><span class="p">)</span>
+                     <span class="nb">:remote?</span> <span class="no">t</span>
+                     <span class="nb">:server-id</span> <span class="ss">&#39;pyls-remote</span><span class="p">))</span>
+</code></pre></div>
+
+<h3 id="dealing-with-stderr">Dealing with stderr<a class="headerlink" href="#dealing-with-stderr" title="Permanent link">#</a></h3>
+<p>With TRAMP, Emacs does not have an easy way to distinguish stdout and stderr, so when the underlying LSP process writes to stderr, it breaks the <code>lsp-mode</code> parser. As a workaround, <code>lsp-mode</code> is redirecting stderr to <code>/tmp/&lt;process-name&gt;-&lt;id&gt;~stderr</code>.</p>
+<h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">#</a></h2>
+<p>Refer to <a href="https://github.com/emacs-lsp/lsp-docker/">lsp-docker</a> README which provides a guide on how you can run <code>lsp-mode</code> in <code>docker</code> container.</p>
                 
                   
                     
@@ -1614,7 +1643,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../lsp-ocalm-lsp-server/" title="OCaml (icaml-lsp)" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../keybindings/" title="Keybindings" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1623,19 +1652,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                OCaml (icaml-lsp)
+                Keybindings
               </div>
             </div>
           </a>
         
         
-          <a href="../lsp-perl/" title="Perl" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../faq/" title="FAQ" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Perl
+                FAQ
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

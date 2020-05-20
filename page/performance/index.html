@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/CHANGELOG/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/performance/">
       
       
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Changelog - LSP Mode - Language Server Protocol Support for Emacs</title>
+        <title>Perfomance - LSP Mode - Language Server Protocol Support for Emacs</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#changelog" class="md-skip">
+        <a href="#performance" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Changelog
+              Perfomance
             
           </span>
         </div>
@@ -159,7 +159,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../.." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link md-tabs__link--active">
           Home
         </a>
       
@@ -211,7 +211,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../CHANGELOG/" class="md-tabs__link">
           Changelog
         </a>
       
@@ -260,10 +260,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
     
     <label class="md-nav__link" for="nav-1">
       Home
@@ -297,10 +299,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2" checked>
     
     <label class="md-nav__link" for="nav-1-2">
       Setup
@@ -346,11 +350,60 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../performance/" title="Perfomance" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Perfomance
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Perfomance" class="md-nav__link md-nav__link--active">
       Perfomance
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tuning" class="md-nav__link">
+    Tuning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reporting-performance-problems" class="md-nav__link">
+    Reporting performance problems
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1400,12 +1453,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Changelog
@@ -1427,108 +1478,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Changelog
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Changelog" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../CHANGELOG/" title="Changelog" class="md-nav__link">
       Changelog
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#release-63" class="md-nav__link">
-    Release 6.3
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-62" class="md-nav__link">
-    Release 6.2
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-61" class="md-nav__link">
-    Release 6.1
-  </a>
-  
-    <nav class="md-nav" aria-label="Release 6.1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#support-for-new-languageslanguage-servers" class="md-nav__link">
-    Support for new languages/language servers:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#new-logging-options" class="md-nav__link">
-    New logging options
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-methods" class="md-nav__link">
-    LSP Methods
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-changes" class="md-nav__link">
-    Other changes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-60" class="md-nav__link">
-    Release 6.0
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1563,63 +1517,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#release-63" class="md-nav__link">
-    Release 6.3
+  <a href="#tuning" class="md-nav__link">
+    Tuning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#release-62" class="md-nav__link">
-    Release 6.2
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-61" class="md-nav__link">
-    Release 6.1
-  </a>
-  
-    <nav class="md-nav" aria-label="Release 6.1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#support-for-new-languageslanguage-servers" class="md-nav__link">
-    Support for new languages/language servers:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#new-logging-options" class="md-nav__link">
-    New logging options
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-methods" class="md-nav__link">
-    LSP Methods
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-changes" class="md-nav__link">
-    Other changes
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#release-60" class="md-nav__link">
-    Release 6.0
+  <a href="#reporting-performance-problems" class="md-nav__link">
+    Reporting performance problems
   </a>
   
 </li>
@@ -1636,7 +1542,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/CHANGELOG.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/performance.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1644,239 +1550,64 @@
                   
                 
                 
-                <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
-<h2 id="release-63">Release 6.3<a class="headerlink" href="#release-63" title="Permanent link">#</a></h2>
+                <h1 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">#</a></h1>
+<h2 id="tuning">Tuning<a class="headerlink" href="#tuning" title="Permanent link">#</a></h2>
+<p>Use <code>M-x lsp-diagnose</code> to validate if your <code>lsp-mode</code> is properly configured. In the section below, you could find description for each of the checks:</p>
+<p>When configured properly <code>lsp-mode</code>'s performance is on par with mainstream LSP clients (e. g. <code>VScode</code>, <code>Theia</code>, etc). Here are steps to achieve optimal results.</p>
 <ul>
-<li>Implemented <code>company-capf</code> integration. <code>company-lsp</code> is no longer
-    supported.</li>
-<li>Dropped support for dart language server in favour of dart
-    SDK(breaking)</li>
-<li>Added verilog support for LSP using hdl-checker</li>
-<li>Implemented call hierarchy support (available in <code>lsp-treemacs</code>)</li>
-<li>Implemented support for ESLint language server.</li>
-<li>ocmalmerlin-lsp moved to ocaml-lsp-server(breaking)</li>
-<li>Added New VHDL language server
-    <a href="https://github.com/kraigher/rust_hdl#configuration">https://github.com/kraigher/rust_hdl#configuration</a></li>
-<li>Add Nim language server integration</li>
-<li>Implement automatic downloading facilities and implemented
-    auto-download for <code>typescript-language-server</code>,
-    <code>javascript-typescript-stdio</code> and <code>json-language-server</code>.</li>
-<li>Implement metals decoration protocol</li>
-<li>Send metals/didFocusTextDocument notification on buffer change</li>
-<li>Add default keybindings and <code>which-key</code> integration</li>
-<li>Add support for Dhall language server</li>
-<li>Implemented debug adapter protocol support for metals</li>
-<li>Add CMake language server integration</li>
-<li>Add rust-analyzer runnables support</li>
-<li>Implemented rust-analyzer inlay hints</li>
-<li>Support pyenv for pyls</li>
-<li>Add clang-tidy specific Flycheck error explainer for the lsp checker</li>
-<li>Improve lsp-mode completion performance by suppressing non
-    completion related features when completion is active.</li>
-<li>lsp-json: Enable formatter provider</li>
-<li>Accommodate the new :end-column and :end-column from flycheck</li>
-<li>Implement status bar for diagnostics <code>lsp-diagnostics-modeline-mode</code></li>
-<li>Auto install of the <code>html-language-server</code></li>
-<li>Flycheck support for diagnostic tags (3.15 spec).</li>
-<li>Adding support for GDScript language server</li>
-<li>used view mode for metals doctor buffer</li>
-<li>add texlab as tex LSP server</li>
-<li>Started new set of integration tests without using ecukes</li>
-<li>Support "only" param when requesting code actions</li>
-<li>Add Perl-LanguageServer support</li>
-<li>add support robot-framework language server.</li>
-<li>Implement deferred semantic highlighting</li>
-<li>Change default transport for erlang<sub>ls</sub> to stdio</li>
-<li>dart language server moved into separate repo
-    <a href="https://github.com/emacs-lsp/lsp-dart">https://github.com/emacs-lsp/lsp-dart</a></li>
-<li>Activate flow language server if there is flow tag in file or
-    .flowconfig in project</li>
-<li>Add purescript-language-server (#1596)</li>
-<li>Process the $/progress messages from LSP 3.15</li>
-<li>Display the first line of MarkupContent in eldoc (#1607)</li>
-<li>Perform willSaveWaitUntil synchronously and with shorter timeout</li>
-<li>Display images when rendering markdown(useful for latex language
-    servers).</li>
-<li>Increase <code>lsp-idle-delay</code> to 0.5</li>
-<li>Support bash language server glob pattern option (#1594)</li>
-<li>Use pagebreaks for <code>lsp-describe-thing-at-point</code></li>
-<li>lsp-mode: Eliminate quadratic-time index-building for imenu.
-    (#1616)</li>
-</ul>
-<h2 id="release-62">Release 6.2<a class="headerlink" href="#release-62" title="Permanent link">#</a></h2>
+<li>
+<p>Use Emacs 27+ with native json support. (Note: this requires that you have <a href="http://www.digip.org/jansson/">libjansson</a> installed, and that emacs was compiled with `–with-json` passed to `./configure`.) You can check your installation for native json support by running do <kbd>M-:</kbd> <code>(functionp 'json-serialize)</code> <kbd>RET</kbd>. 
+Benchmarks show that Emacs 27 is <code>~15 times</code> faster than Emacs when using Elisp json parser implementation.</p>
+</li>
+<li>
+<p>Adjust <code>gc-cons-threshold</code>. The default setting is too low for <code>lsp-mode</code>'s needs due to the fact that client/server communication generates a lot of memory/garbage. You have two options:</p>
 <ul>
-<li>Support dynamic rename registration</li>
-<li>Add basic support for style semantic highlighting</li>
-<li>Added Haxe language server integration</li>
-<li>Add C#-support via Roslyn.</li>
-<li>Add emmy lua support</li>
-<li>Enable plugins in typescript language server.</li>
-<li>1079 Provide support for Ada Language server</li>
-<li>Implement right click support in <code>lsp-mode</code> buffers.</li>
-<li>Added built-in support for <code>Rust Analyzer</code>.</li>
-<li>Added support for HDL Checker server to lsp-vhdl</li>
-<li>Added support for Terraform language server.</li>
-<li>Added support for R language server (#1182)</li>
-<li>Added support for passing environment variables to language servers
-    (#1184)</li>
-<li>Speedup lsp-mode's JSONRPC processing (\~2 times)</li>
-<li>Add cancel-token to lsp-request-async</li>
-<li>Implement unified way to handle recurring lsp features</li>
-<li>Added support for powershell language server.</li>
-<li>Implemented inlay hints for <code>Rust Analyzer</code> (thanks to <code>brotzeit</code>).</li>
-<li>Implemented automatic installation for C# language server.</li>
-<li>Reimplemented <code>textDocument/signatureHelp</code> - now the signature is
-    displayed in <code>lv</code> buffer.</li>
-<li>Cancel sync requests when presssing <code>C-g</code> during the request.</li>
-<li>Use <code>c-basic-offset</code> when in <code>cc-mode</code>.</li>
-<li>Add support for Crystal via scry (#1218).</li>
-<li>Implement <code>textDocument/documentColor</code> support.</li>
+<li>Set it to big number(100mb) like most of the popular starter kits like Spacemacs/Doom/Prelude, etc do:</li>
 </ul>
-<h2 id="release-61">Release 6.1<a class="headerlink" href="#release-61" title="Permanent link">#</a></h2>
-<h3 id="support-for-new-languageslanguage-servers">Support for new languages/language servers:<a class="headerlink" href="#support-for-new-languageslanguage-servers" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">gc-cons-threshold</span> <span class="mi">100000000</span><span class="p">)</span>
+</code></pre></div>
+
 <ul>
-<li><a href="https://github.com/fwcd/KotlinLanguageServer">Kotlin Language
-    Server</a> (Thanks to Jon
-    Carr)</li>
-<li><a href="https://github.com/golang/go/wiki/gopls">gopls</a> Language Server for
-    Go</li>
-<li><a href="https://github.com/angelozerr/lsp4xml">XML Language Server
-    (lsp4xml)</a></li>
-<li>Hack (using <a href="https://docs.hhvm.com/hhvm/">HHVM</a>)</li>
-<li><a href="http://intelephense.net/">Intelephense</a> for PHP</li>
-<li><a href="https://github.com/snoe/clojure-lsp">clojure-lsp</a> for
-    Clojure/ClojureScipt (Thanks to Dario Benedek Fazekas)</li>
-<li><a href="https://github.com/elm-tooling/elm-language-server">elmLS</a> for Elm
-    (Thanks to Daniel-V)</li>
-<li><a href="https://github.com/fsharp/FsAutoComplete">FsAutoComplete</a> for F#
-    (Thanks to Reed Mullanix)</li>
-<li>Added <code>Erlang</code> support via
-    <a href="https://github.com/erlang-ls/erlang_ls">erlang<sub>ls</sub></a></li>
-<li>Added <code>Dockerfile</code> support via
-    <a href="https://github.com/rcjsuen/dockerfile-language-server-nodejs">dockerfile-language-server-nodejs</a></li>
+<li>Follow the method recommended by Gnu Emacs Maintainer Eli Zaretskii: "My suggestion is to repeatedly multiply gc-cons-threshold by 2 until you stop seeing significant improvements in responsiveness, and in any case not to increase by a factor larger than 100 or somesuch. If even a 100-fold increase doesn't help, there's some deeper problem with the Lisp code which produces so much garbage, or maybe GC is not the reason for slowdown." Source: <a href="https://www.reddit.com/r/emacs/comments/brc05y/is_lspmode_too_slow_to_use_for_anyone_else/eofulix/">https://www.reddit.com/r/emacs/comments/brc05y/is_lspmode_too_slow_to_use_for_anyone_else/eofulix/</a></li>
 </ul>
-<h3 id="new-logging-options">New logging options<a class="headerlink" href="#new-logging-options" title="Permanent link">#</a></h3>
+</li>
+<li>
+<p>Increase the amount of data which Emacs reads from the process. Again the emacs default is too low 4k considering that the some of the language server responses are in 800k - 3M range.</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">read-process-output-max</span> <span class="p">(</span><span class="nf">*</span> <span class="mi">1024</span> <span class="mi">1024</span><span class="p">))</span> <span class="c1">;; 1mb</span>
+</code></pre></div>
+
 <ul>
-<li><code>lsp-mode</code> now logs to buffer <code>*lsp-log*</code>, instead of <code>*Messages*</code>.
-    This can be controlled with the variable <code>lsp-log-max</code> (Thanks to
-    Thomas Fini Hansen).</li>
-<li>If <code>lsp-print-performance</code> is non-nil, <code>lsp-mode</code> will log a
-    corresponding performance trace to <code>*lsp-log*</code> for every message to
-    and from the server.</li>
-<li>The variable <code>lsp-print-io</code>, when non-nil will cause <code>lsp-mode</code> to
-    log all messages to and from the server to a unique <code>*lsp-io*</code>
-    buffer for every project root. These logs can be saved to a file and
-    viewed using the <a href="https://microsoft.github.io/language-server-protocol/inspector/">LSP
-    Inspector</a>.</li>
+<li>Optional: use <code>company-capf</code> . Although <code>company-lsp</code> also supports caching <code>lsp-mode</code>'s <code>company-capf</code> does that by default. To achieve that uninstall <code>company-lsp</code> or put these lines in your config:</li>
 </ul>
-<h3 id="lsp-methods">LSP Methods<a class="headerlink" href="#lsp-methods" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-prefer-capf</span> <span class="no">t</span><span class="p">)</span>
+</code></pre></div>
+
+<p><em>Note:</em> - to verify which <code>company</code> backend implementation you are using do <code>M-x company-diag</code> when performing auto-completion.</p>
 <ul>
-<li>Add support for
-    <a href="https://microsoft.github.io/language-server-protocol/specification#textDocument_prepareRename">textDocument/prepareRename</a>.
-    If supported by the language server, all renaming operations will be
-    tested for validity.</li>
-<li>Add support for <a href="https://microsoft.github.io/language-server-protocol/specification#workspace_didChangeWatchedFiles">file
-    watches</a>.</li>
-<li>Add support for <a href="https://microsoft.github.io/language-server-protocol/specification#textDocument_codeAction">CodeAction
-    literals</a>.</li>
-<li>Add API level support for <a href="https://microsoft.github.io/language-server-protocol/specification#textDocument_foldingRange">folding
-    ranges</a>.
-    Folding support for
-    <a href="https://github.com/gregsexton/origami.el">origami.el</a> support is
-    implemented by package
-    <a href="https://github.com/emacs-lsp/lsp-origami">lsp-origami</a>.</li>
-<li>Support <a href="https://microsoft.github.io/language-server-protocol/specification#textDocument_documentLink">document
-    links</a>.
-    This can be controlled using the variable <code>lsp-enable-links</code>.</li>
-<li>Support resource operations (edits sent from the language server can
-    now create/modify/remove files and directories).</li>
-<li>Add support for
-    <a href="https://microsoft.github.io/language-server-protocol/specification#workspace_configuration">workspace/configuration</a>.</li>
-<li>Add new function <code>lsp-disconnect</code>.</li>
-<li>Added <code>lsp-find-definition-mouse</code> and bound to <code>C-&lt;down-mouse-1&gt;</code></li>
-<li>Added <code>lsp-extend-selection</code> as a frontend of new LSP method
-    <code>textDocument/extendSelection</code></li>
+<li>Optional: Disable <code>lsp-ui</code>. Normally, <code>lsp-ui</code> is very fast but in some systems (especially when using <code>Windows</code>) <code>lsp-ui</code> overlays and popups might slow down emacs.</li>
+<li>Optional: fine-tune <code>lsp-idle-delay</code>. This variable determines how often lsp-mode will refresh the highlights, lenses, links, etc while you type.</li>
 </ul>
-<h3 id="other-changes">Other changes<a class="headerlink" href="#other-changes" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-idle-delay</span> <span class="mf">0.500</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="reporting-performance-problems">Reporting performance problems<a class="headerlink" href="#reporting-performance-problems" title="Permanent link">#</a></h2>
+<p>If you have tried all of the non-optional steps from the list and <code>emacs</code> is still not very responsive please open a PR with the following information:</p>
 <ul>
-<li>Add project logo (thanks to Jon Carr).</li>
-<li>Created an integration test suite for <code>lsp-mode</code> (See directory
-    <code>features</code>).</li>
-<li>If available, using the native JSON API introduced in Emacs 27.1.</li>
-<li>Tramp implementation now uses TRAMP process instead of TCP sockets
-    (Thanks to Karsten Patzwaldt).</li>
-<li>LSP autoconfiguration adds <code>company-lsp</code> to the list of company
-    backends instead of overriding it.</li>
-<li>Add <code>lsp-mode-map</code>.</li>
-<li>Add menu bar entries for <code>lsp-mode</code>.</li>
-<li>Perform <span class="underline">before save</span> operations
-    (<a href="https://microsoft.github.io/language-server-protocol/specification#textDocument_willSaveWaitUntil">textDocument/willSaveWaitUntil</a>)
-    asynchronously.</li>
-<li><code>imenu</code> support is now handled asynchronously (Thanks to Dario
-    Gjorgjevski).</li>
-<li>Added option <code>:none</code> for <code>lsp-prefer-flymake</code>, which disabled both
-    Flymake and Flycheck support.</li>
-<li>Changed <code>flymake</code> to report the errors immediately after they arrive
-    instead of waiting <code>flymake</code> to call <code>lsp-mode</code>.</li>
-<li>Add debounce when server does not support incremental updates.</li>
-<li>Add hook <code>lsp-after-uninitialized-hook</code>, which stores the list of
-    functions called after a language server has been uninitialized.</li>
-<li>Add variable <code>lsp-symbol-highlighting-skip-current</code>, which lets the
-    user skip the current symbol when a given symbol is being
-    highlighted.</li>
-<li>Add variable <code>lsp-enabled-clients</code>, which lets users set which
-    defined clients are allowed to be used.</li>
-<li>Support multiple signatures while displaying eldoc text. Add
-    variable <code>lsp-signature-render-all</code>, which when non-nil forces
-    <code>lsp-mode</code> to only show the current active signature.</li>
-<li>Expose configuration settings for various language servers.</li>
-<li>Language servers can now be disabled with the variable
-    <code>lsp-disabled-clients</code>.</li>
-<li>Improved applying changes speed.</li>
-<li>Fixed <code>xref</code> support for emacs 27+</li>
-<li>Implemented automatic installation for F# language server.</li>
-<li>Added Emacs 26.x to CI</li>
-<li>Fixed handling of stderr when running over <code>TRAMP</code>.</li>
-<li>Implemented support for running the language server in <code>Docker</code>
-    container over local files.</li>
+<li>Collect <strong>lsp-log</strong> data after setting <code>lsp-print-performance</code> to <code>t</code>.</li>
 </ul>
-<h2 id="release-60">Release 6.0<a class="headerlink" href="#release-60" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-print-performance</span> <span class="no">t</span><span class="p">)</span>
+</code></pre></div>
+
 <ul>
-<li><code>lsp-mode</code> now have single entry point <code>lsp</code> for all language and
-    based on the major mode starts the corresponding language servers.</li>
-<li>Added <code>flymake</code> integration.</li>
-<li><code>lsp</code> automatically enables and configures <code>company-lsp</code>, <code>lsp-ui</code>,
-    <code>yasnippet</code>, or <code>flymake</code> if they are present so no additional
-    configuration is needed except installing the packages. That
-    behavior could be disabled by setting <code>lsp-auto-configure</code> to <code>nil</code>.</li>
-<li><code>lsp-mode</code> ships with several predefined servers located in
-    <code>lsp-clients.el</code> which does not require additional package. For the
-    more complex Language Servers like <code>Eclipse JDT</code>, <code>ccls</code>, <code>cquery</code>
-    and <code>haskell</code> we still require separate package due to relatively
-    high code base.</li>
-<li><code>lsp-mode</code> handles automatically server failures by asking the user
-    whether he/she wants to restart the server.</li>
-<li>introduced new command <code>lsp-describe-session</code> which replaces the
-    existing one <code>lsp-capabilities</code>. The command lists the folders that
-    are part of the workspace and the servers that are associated with
-    the corresponding folder.</li>
-<li><code>lsp-mode</code> displays information about the running server and it's
-    status in the modeline.</li>
-<li><code>lsp-define-stdio-client</code> and <code>lsp-define-tcp-client</code> are replaced
-    with <code>lsp-register-client</code></li>
-<li><code>lsp</code> rely on <code>projectile</code> or <code>project.el</code> now only for suggesting
-    project root. Once you open new file in a project and start <code>lsp</code> it
-    will provide several options(import project, blacklist project,
-    select other directory root). Once you select a root it will be
-    persisted and used for the next sessions.</li>
-<li>support for multiple language servers per single file and workspace.</li>
-<li>changed <code>lsp-mode</code> settings to more sensible defaults.</li>
-<li>Removed all synchronous calls from the server startup.</li>
-<li>Improved multi-folder support.</li>
-<li>added backends for: Bash, C++, CSS, Dart, Elixir, Fortran, Go,
-    Groovy, HTML, Javascript/Typescript, Javascript/Typescript, Ocaml,
-    PHP, Python, Ruby, Rust, Vue, Flow</li>
+<li>Include emacs performance report. Use the following step to collect it:</li>
+<li><code>M-x profiler-start</code> and select <code>CPU</code></li>
+<li>Reproduce the slow behavior.</li>
+<li><code>M-x profiler-stop</code></li>
+<li>In the profiler report expand all nodes by doing <code>C-u TAB</code>.</li>
 </ul>
+<p><em>Note:</em> - <code>lsp-mode</code> is just a frontend and the performance depends on server as well. Some servers (e. g. Palantir's Python Language Server) might be slow when performing auto-completion.</p>
                 
                   
                     
@@ -1908,7 +1639,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../gallery/" title="Gallery" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../configuration/" title="Configuration" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1917,11 +1648,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Gallery
+                Configuration
               </div>
             </div>
           </a>
         
+        
+          <a href="../additional-settings/" title="Additional settings" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Additional settings
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>

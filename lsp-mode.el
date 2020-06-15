@@ -1229,7 +1229,7 @@ Symlinks are not followed."
   "Return t if PATH-A is ancestor of PATH-B.
 Symlinks are not followed."
   (unless (lsp-f-same? path-a path-b)
-    (s-prefix? (lsp-f-canonical path-a)
+    (s-prefix? (concat (lsp-f-canonical path-a) "/")
                (lsp-f-canonical path-b))))
 
 (defun lsp--merge-results (results method)

@@ -219,6 +219,25 @@
   
 
       
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../blog/2020/7.0-release/" class="md-tabs__link">
+          Blog
+        </a>
+      
+    </li>
+  
+
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -1307,6 +1326,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-latex/" title="TeX, LaTeX, etc (texlab, external)" class="md-nav__link">
+      TeX, LaTeX, etc (texlab, external)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../lsp-verilog/" title="Verilog/SystemVerilog" class="md-nav__link">
       Verilog/SystemVerilog
     </a>
@@ -1504,6 +1535,78 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Blog
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Blog" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Blog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+    
+    <label class="md-nav__link" for="nav-6-1">
+      2020
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="2020" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        2020
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blog/2020/7.0-release/" title="7.0 Release" class="md-nav__link">
+      7.0 Release
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1595,14 +1698,13 @@
 <ul>
 <li><code>lsp-log-io</code> - If non-nil, print all messages to and from the language server to <code>*lsp-log*</code>.</li>
 <li><code>lsp-print-performance</code> - If non-nil, print performance info. to <code>*lsp-log*</code>.</li>
-<li><code>lsp-inhibit-message</code> - If non-nil, inhibit the message echo via <code>inhibit-message</code>.</li>
 <li><code>lsp-report-if-no-buffer</code> - If non nil the errors will be reported even when the file is not open.</li>
 <li><code>lsp-keep-workspace-alive</code> - If non nil keep workspace alive when the last workspace buffer is closed.</li>
 <li><code>lsp-enable-snippet</code> - Enable/disable snippet completion support.</li>
 <li><code>lsp-auto-guess-root</code> - Automatically guess the project root using projectile/project. Do <strong>not</strong> use this setting unless you are familiar with <code>lsp-mode</code> internals and you are sure that all of your projects are following <code>projectile=/=project.el</code> conventions.</li>
 <li><code>lsp-restart</code> - Defines how server exited event must be handled.</li>
 <li><code>lsp-session-file</code> - File where session information is stored.</li>
-<li><code>lsp-auto-configure</code> - Auto configure <code>lsp-mode</code>. When set to <code>t</code>, <code>lsp-mode</code> will auto-configure <code>lsp-ui</code> and <code>company-lsp</code>.</li>
+<li><code>lsp-auto-configure</code> - Auto configure <code>lsp-mode</code>. When set to <code>t</code>, <code>lsp-mode</code> will auto-configure <code>lsp-ui</code>, <code>dap-mode</code> and other settings that makes sense to enable by default.</li>
 <li><code>lsp-document-sync-method</code> - How to sync the document with the language server.</li>
 <li><code>lsp-auto-execute-action</code> - Auto-execute single action.</li>
 <li><code>lsp-eldoc-render-all</code> - Display all of the info returned by <code>document/onHover</code>. If this is nil, <code>eldoc</code> will show only the symbol information.</li>
@@ -1651,7 +1753,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: June 30, 2020
+      Last update: July 7, 2020
     
   </small>
 </div>

@@ -146,14 +146,6 @@
     "debugger": "Yes"
   },
   {
-    "name": "bingo",
-    "full-name": "Go",
-    "server-name": "bingo",
-    "server-url": "https://github.com/saibing/bingo",
-    "installation-url": "https://github.com/saibing/bingo/wiki/Install",
-    "debugger": "Yes"
-  },
-  {
     "name": "gdscript",
     "full-name": "GDScript",
     "server-name": "godot",
@@ -249,6 +241,23 @@
     "server-name": "EmmyLua",
     "server-url": "https://github.com/EmmyLua/EmmyLua-LanguageServer",
     "installation-url": "https://github.com/emacs-lsp/lsp-mode/wiki/Install-EmmyLua-Language-server",
+    "debugger": "Not available"
+  },
+  {
+    "name": "lua-language-server",
+    "full-name": "Lua",
+    "server-name": "lua-language-server",
+    "installation-url": "https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone)",
+    "server-url": "https://github.com/sumneko/lua-language-server",
+    "debugger": "Not available"
+  },
+  {
+    "name": "lua-lsp",
+    "full-name": "Lua",
+    "server-name": "lua-lsp",
+    "installation-url": "https://luarocks.org/modules/alloyed/lua-lsp",
+    "server-url": "https://github.com/Alloyed/lua-lsp",
+    "installation": "luarocks install --server=https://luarocks.org/dev lua-lsp --local",
     "debugger": "Not available"
   },
   {
@@ -389,6 +398,14 @@
     "server-name": "sqls",
     "server-url": "https://github.com/lighttiger2505/sqls",
     "installation": "go get github.com/lighttiger2505/sqls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "svelte",
+    "full-name": "Svelte",
+    "server-name": "svelteserver",
+    "server-url": "https://github.com/sveltejs/language-tools",
+    "installation": "npm i -g svelte-language-server",
     "debugger": "Not available"
   },
   {

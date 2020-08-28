@@ -13,7 +13,7 @@
       
       
       <link rel="shortcut icon" href="../../examples/logo-mini.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.9">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.b8ac9624.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.36ee6aaa.min.css">
       
       
     
@@ -717,26 +717,6 @@
     Available configurations
   </a>
   
-    <nav class="md-nav" aria-label="Available configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lsp-clients-clangd-executable" class="md-nav__link">
-    lsp-clients-clangd-executable
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-clients-clangd-args" class="md-nav__link">
-    lsp-clients-clangd-args
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -1148,6 +1128,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-nix/" title="Nix" class="md-nav__link">
+      Nix
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../lsp-ocaml/" title="OCaml (ocaml)" class="md-nav__link">
       OCaml (ocaml)
     </a>
@@ -1256,8 +1248,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-pyls/" title="Python" class="md-nav__link">
-      Python
+    <a href="../lsp-jedi/" title="Python (Jedi Language Server)" class="md-nav__link">
+      Python (Jedi Language Server)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-pyls/" title="Python (Palantir)" class="md-nav__link">
+      Python (Palantir)
     </a>
   </li>
 
@@ -1792,26 +1796,6 @@
     Available configurations
   </a>
   
-    <nav class="md-nav" aria-label="Available configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lsp-clients-clangd-executable" class="md-nav__link">
-    lsp-clients-clangd-executable
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-clients-clangd-args" class="md-nav__link">
-    lsp-clients-clangd-args
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -1841,17 +1825,6 @@
 <p>For more instructions on how to install, check <a href="https://clangd.llvm.org/installation.html">here</a>.</p>
 <h3 id="debugger-yes-gdb-or-lldb">Debugger: Yes (gdb or lldb)<a class="headerlink" href="#debugger-yes-gdb-or-lldb" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
-<h3 id="lsp-clients-clangd-executable"><code>lsp-clients-clangd-executable</code><a class="headerlink" href="#lsp-clients-clangd-executable" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>The clangd executable to use.
-When ‘’non-nil’ use the name of the clangd executable file
-available in your path to use. Otherwise the system will try to
-find a suitable one. Set this variable before loading lsp.</p>
-<hr />
-<h3 id="lsp-clients-clangd-args"><code>lsp-clients-clangd-args</code><a class="headerlink" href="#lsp-clients-clangd-args" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>Extra arguments for the clangd executable.</p>
-<hr />
                 
                   
                     
@@ -1860,7 +1833,7 @@ find a suitable one. Set this variable before loading lsp.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 28, 2020</span>
     
   </small>
 </div>
@@ -1962,15 +1935,15 @@ find a suitable one. Set this variable before loading lsp.</p>
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.d1f5a259.min.js"></script>
-      <script src="../../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.df0def68.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.fae956e7.min.js"
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

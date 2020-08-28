@@ -279,6 +279,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "nix",
+    "full-name": "Nix",
+    "server-name": "rnix-lsp",
+    "server-url": "https://github.com/nix-community/rnix-lsp",
+    "installation": "nix-env -i rnix-lsp",
+    "debugger": "Not available"
+  },
+  {
     "name": "ocaml",
     "full-name": "OCaml",
     "server-name": "ocaml-language-server",
@@ -336,6 +344,14 @@
     "server-url": "https://github.com/nwolverson/purescript-language-server",
     "installation-url": "https://github.com/nwolverson/purescript-language-server#usage",
     "installation": "npm i -g purescript-language-server",
+    "debugger": "Not available"
+  },
+  {
+    "name": "jedi",
+    "full-name": "Python(Jedi-language-server)",
+    "server-name": "jedi",
+    "server-url": "https://github.com/pappasam/jedi-language-server",
+    "installation-url": "https://github.com/fredcamps/lsp-jedi",
     "debugger": "Not available"
   },
   {

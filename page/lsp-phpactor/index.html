@@ -9,7 +9,7 @@
         <meta name="description" content="Language Server Protocol Support for Emacs">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-eslint/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-phpactor/">
       
       
         <meta name="author" content="ercdll1337@gmail.com">
@@ -19,7 +19,7 @@
     
     
       
-        <title>Eslint - LSP Mode - LSP support for Emacs</title>
+        <title>PHP (phpactor) - LSP Mode - LSP support for Emacs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eslint" class="md-skip">
+        <a href="#phpactor" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Eslint
+              PHP (phpactor)
             
           </span>
         </div>
@@ -799,236 +799,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Eslint
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" title="Eslint" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../lsp-eslint/" title="Eslint" class="md-nav__link">
       Eslint
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debugger-na" class="md-nav__link">
-    Debugger: N/A
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
-  
-    <nav class="md-nav" aria-label="Available configurations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-unzipped-path" class="md-nav__link">
-    lsp-eslint-unzipped-path
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-server-command" class="md-nav__link">
-    lsp-eslint-server-command
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-enable" class="md-nav__link">
-    lsp-eslint-enable
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-package-manager" class="md-nav__link">
-    lsp-eslint-package-manager
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-format" class="md-nav__link">
-    lsp-eslint-format
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-node-path" class="md-nav__link">
-    lsp-eslint-node-path
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-node" class="md-nav__link">
-    lsp-eslint-node
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-options" class="md-nav__link">
-    lsp-eslint-options
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-trace-server" class="md-nav__link">
-    lsp-eslint-trace-server
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-run" class="md-nav__link">
-    lsp-eslint-run
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-auto-fix-on-save" class="md-nav__link">
-    lsp-eslint-auto-fix-on-save
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-fix-all-problem-type" class="md-nav__link">
-    lsp-eslint-fix-all-problem-type
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-quiet" class="md-nav__link">
-    lsp-eslint-quiet
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-working-directories" class="md-nav__link">
-    lsp-eslint-working-directories
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-validate" class="md-nav__link">
-    lsp-eslint-validate
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-provide-lint-task" class="md-nav__link">
-    lsp-eslint-provide-lint-task
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-lint-task-enable" class="md-nav__link">
-    lsp-eslint-lint-task-enable
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-lint-task-options" class="md-nav__link">
-    lsp-eslint-lint-task-options
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-runtime" class="md-nav__link">
-    lsp-eslint-runtime
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-code-action-disable-rule-comment" class="md-nav__link">
-    lsp-eslint-code-action-disable-rule-comment
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-code-action-show-documentation" class="md-nav__link">
-    lsp-eslint-code-action-show-documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-experimental-incremental-sync" class="md-nav__link">
-    lsp-eslint-experimental-incremental-sync
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1384,11 +1159,96 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../lsp-phpactor/" title="PHP (phpactor)" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        PHP (phpactor)
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="PHP (phpactor)" class="md-nav__link md-nav__link--active">
       PHP (phpactor)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-yes" class="md-nav__link">
+    Debugger: yes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-phpactor-path" class="md-nav__link">
+    lsp-phpactor-path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-phpactor-extension-alist" class="md-nav__link">
+    lsp-phpactor-extension-alist
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2026,8 +1886,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debugger-na" class="md-nav__link">
-    Debugger: N/A
+  <a href="#debugger-yes" class="md-nav__link">
+    Debugger: yes
   </a>
   
 </li>
@@ -2046,155 +1906,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lsp-eslint-unzipped-path" class="md-nav__link">
-    lsp-eslint-unzipped-path
+  <a href="#lsp-phpactor-path" class="md-nav__link">
+    lsp-phpactor-path
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-eslint-server-command" class="md-nav__link">
-    lsp-eslint-server-command
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-enable" class="md-nav__link">
-    lsp-eslint-enable
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-package-manager" class="md-nav__link">
-    lsp-eslint-package-manager
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-format" class="md-nav__link">
-    lsp-eslint-format
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-node-path" class="md-nav__link">
-    lsp-eslint-node-path
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-node" class="md-nav__link">
-    lsp-eslint-node
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-options" class="md-nav__link">
-    lsp-eslint-options
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-trace-server" class="md-nav__link">
-    lsp-eslint-trace-server
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-run" class="md-nav__link">
-    lsp-eslint-run
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-auto-fix-on-save" class="md-nav__link">
-    lsp-eslint-auto-fix-on-save
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-fix-all-problem-type" class="md-nav__link">
-    lsp-eslint-fix-all-problem-type
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-quiet" class="md-nav__link">
-    lsp-eslint-quiet
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-working-directories" class="md-nav__link">
-    lsp-eslint-working-directories
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-validate" class="md-nav__link">
-    lsp-eslint-validate
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-provide-lint-task" class="md-nav__link">
-    lsp-eslint-provide-lint-task
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-lint-task-enable" class="md-nav__link">
-    lsp-eslint-lint-task-enable
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-lint-task-options" class="md-nav__link">
-    lsp-eslint-lint-task-options
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-runtime" class="md-nav__link">
-    lsp-eslint-runtime
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-code-action-disable-rule-comment" class="md-nav__link">
-    lsp-eslint-code-action-disable-rule-comment
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-code-action-show-documentation" class="md-nav__link">
-    lsp-eslint-code-action-show-documentation
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-eslint-experimental-incremental-sync" class="md-nav__link">
-    lsp-eslint-experimental-incremental-sync
+  <a href="#lsp-phpactor-extension-alist" class="md-nav__link">
+    lsp-phpactor-extension-alist
   </a>
   
 </li>
@@ -2216,106 +1936,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/lsp-eslint.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/emacs-lsp/lsp-mode/edit/master/docs/page/lsp-phpactor.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="eslint">ESlint<a class="headerlink" href="#eslint" title="Permanent link">#</a></h1>
+                <h1 id="phpactor">Phpactor<a class="headerlink" href="#phpactor" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For more information about the LSP server, check <a href="https://github.com/Microsoft/vscode-eslint">eslint</a>.</p>
+<p>For more information about the LSP server, check <a href="https://github.com/phpactor/phpactor">phpactor</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p>This Server supports automatic install.
-Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><kbd>RET</kbd><code>eslint</code><kbd>RET</kbd>.</p>
-<h3 id="debugger-na">Debugger: N/A<a class="headerlink" href="#debugger-na" title="Permanent link">#</a></h3>
+<p><code>composer g require phpactor/phpactor</code></p>
+<p>For more instructions on how to install manually, check <a href="https://phpactor.readthedocs.io/en/develop/usage/standalone.html#installation-global">here</a>.</p>
+<h3 id="debugger-yes">Debugger: yes<a class="headerlink" href="#debugger-yes" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
-<h3 id="lsp-eslint-unzipped-path"><code>lsp-eslint-unzipped-path</code><a class="headerlink" href="#lsp-eslint-unzipped-path" title="Permanent link">#</a></h3>
-<p><em>Default: <code>~/.emacs.d/.cache/lsp/eslint/unzipped</code></em></p>
-<p>The path to the file in which ‘eslint’ will be stored.</p>
+<h3 id="lsp-phpactor-path"><code>lsp-phpactor-path</code><a class="headerlink" href="#lsp-phpactor-path" title="Permanent link">#</a></h3>
+<p><em>Default: <code>~/.composer/vendor/phpactor/phpactor/bin/phpactor</code></em></p>
+<p>Path to the ‘phpactor’ command.</p>
 <hr />
-<h3 id="lsp-eslint-server-command"><code>lsp-eslint-server-command</code><a class="headerlink" href="#lsp-eslint-server-command" title="Permanent link">#</a></h3>
-<p><em>Default: <code>(node ~/server/out/eslintServer.js --stdio)</code></em></p>
-<p>Command to start eslint server.</p>
-<hr />
-<h3 id="lsp-eslint-enable"><code>lsp-eslint-enable</code><a class="headerlink" href="#lsp-eslint-enable" title="Permanent link">#</a></h3>
-<p><em>Default: <code>t</code></em></p>
-<p>Controls whether eslint is enabled for JavaScript files or not.</p>
-<hr />
-<h3 id="lsp-eslint-package-manager"><code>lsp-eslint-package-manager</code><a class="headerlink" href="#lsp-eslint-package-manager" title="Permanent link">#</a></h3>
-<p><em>Default: <code>npm</code></em></p>
-<p>The package manager you use to install node modules.</p>
-<hr />
-<h3 id="lsp-eslint-format"><code>lsp-eslint-format</code><a class="headerlink" href="#lsp-eslint-format" title="Permanent link">#</a></h3>
-<p><em>Default: <code>t</code></em></p>
-<p>Whether to perform format.</p>
-<hr />
-<h3 id="lsp-eslint-node-path"><code>lsp-eslint-node-path</code><a class="headerlink" href="#lsp-eslint-node-path" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>A path added to NODE_PATH when resolving the eslint module.</p>
-<hr />
-<h3 id="lsp-eslint-node"><code>lsp-eslint-node</code><a class="headerlink" href="#lsp-eslint-node" title="Permanent link">#</a></h3>
-<p><em>Default: <code>node</code></em></p>
-<p>Path to nodejs.</p>
-<hr />
-<h3 id="lsp-eslint-options"><code>lsp-eslint-options</code><a class="headerlink" href="#lsp-eslint-options" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>The eslint options object to provide args normally passed to
-  eslint when executed from a command line (see
-  http://eslint.org/docs/developer-guide/nodejs-api#cliengine).</p>
-<hr />
-<h3 id="lsp-eslint-trace-server"><code>lsp-eslint-trace-server</code><a class="headerlink" href="#lsp-eslint-trace-server" title="Permanent link">#</a></h3>
-<p><em>Default: <code>off</code></em></p>
-<p>Traces the communication between VSCode and the eslint linter service.</p>
-<hr />
-<h3 id="lsp-eslint-run"><code>lsp-eslint-run</code><a class="headerlink" href="#lsp-eslint-run" title="Permanent link">#</a></h3>
-<p><em>Default: <code>onType</code></em></p>
-<p>Run the linter on save (onSave) or on type (onType)</p>
-<hr />
-<h3 id="lsp-eslint-auto-fix-on-save"><code>lsp-eslint-auto-fix-on-save</code><a class="headerlink" href="#lsp-eslint-auto-fix-on-save" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>Turns auto fix on save on or off.</p>
-<hr />
-<h3 id="lsp-eslint-fix-all-problem-type"><code>lsp-eslint-fix-all-problem-type</code><a class="headerlink" href="#lsp-eslint-fix-all-problem-type" title="Permanent link">#</a></h3>
-<p><em>Default: <code>all</code></em></p>
-<p>Determines which problems are fixed when running the
-source.fixAll code action.</p>
-<hr />
-<h3 id="lsp-eslint-quiet"><code>lsp-eslint-quiet</code><a class="headerlink" href="#lsp-eslint-quiet" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>Turns on quiet mode, which ignores warnings.</p>
-<hr />
-<h3 id="lsp-eslint-working-directories"><code>lsp-eslint-working-directories</code><a class="headerlink" href="#lsp-eslint-working-directories" title="Permanent link">#</a></h3>
-<p><em>Default: <code>[]</code></em></p>
-<hr />
-<h3 id="lsp-eslint-validate"><code>lsp-eslint-validate</code><a class="headerlink" href="#lsp-eslint-validate" title="Permanent link">#</a></h3>
-<p><em>Default: <code>[javascript javascriptreact]</code></em></p>
-<p>An array of language ids which should be validated by ESLint</p>
-<hr />
-<h3 id="lsp-eslint-provide-lint-task"><code>lsp-eslint-provide-lint-task</code><a class="headerlink" href="#lsp-eslint-provide-lint-task" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>Controls whether a task for linting the whole workspace will be available.</p>
-<hr />
-<h3 id="lsp-eslint-lint-task-enable"><code>lsp-eslint-lint-task-enable</code><a class="headerlink" href="#lsp-eslint-lint-task-enable" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>Controls whether a task for linting the whole workspace will be available.</p>
-<hr />
-<h3 id="lsp-eslint-lint-task-options"><code>lsp-eslint-lint-task-options</code><a class="headerlink" href="#lsp-eslint-lint-task-options" title="Permanent link">#</a></h3>
-<p><em>Default: <code>.</code></em></p>
-<p>Command line options applied when running the task for linting the whole workspace (see https://eslint.org/docs/user-guide/command-line-interface).</p>
-<hr />
-<h3 id="lsp-eslint-runtime"><code>lsp-eslint-runtime</code><a class="headerlink" href="#lsp-eslint-runtime" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>The location of the node binary to run ESLint under.</p>
-<hr />
-<h3 id="lsp-eslint-code-action-disable-rule-comment"><code>lsp-eslint-code-action-disable-rule-comment</code><a class="headerlink" href="#lsp-eslint-code-action-disable-rule-comment" title="Permanent link">#</a></h3>
-<p><em>Default: <code>((enable . t) (location . separateLine))</code></em></p>
-<hr />
-<h3 id="lsp-eslint-code-action-show-documentation"><code>lsp-eslint-code-action-show-documentation</code><a class="headerlink" href="#lsp-eslint-code-action-show-documentation" title="Permanent link">#</a></h3>
-<p><em>Default: <code>((enable . t))</code></em></p>
-<hr />
-<h3 id="lsp-eslint-experimental-incremental-sync"><code>lsp-eslint-experimental-incremental-sync</code><a class="headerlink" href="#lsp-eslint-experimental-incremental-sync" title="Permanent link">#</a></h3>
-<p><em>Default: <code>t</code></em></p>
-<p>Controls whether the new incremental text document synchronization should be used.</p>
+<h3 id="lsp-phpactor-extension-alist"><code>lsp-phpactor-extension-alist</code><a class="headerlink" href="#lsp-phpactor-extension-alist" title="Permanent link">#</a></h3>
+<p><em>Default: <code>((Phpstan . phpactor/language-server-phpstan-extension) (Behat . phpactor/behat-extension) (PHPUnit . phpactor/phpunit-extension))</code></em></p>
+<p>Alist mapping extension names to ‘composer’ packages.
+These extensions can be installed using
+‘lsp-phpactor-install-extension’.</p>
 <hr />
                 
                   
@@ -2348,7 +1990,7 @@ source.fixAll code action.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../lsp-erlang/" title="Erlang" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lsp-php/" title="PHP (felixbecker)" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -2357,19 +1999,19 @@ source.fixAll code action.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Erlang
+                PHP (felixbecker)
               </div>
             </div>
           </a>
         
         
-          <a href="../lsp-fsharp/" title="F#" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../lsp-pwsh/" title="Powershell" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                F#
+                Powershell
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

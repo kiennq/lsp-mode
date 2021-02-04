@@ -2074,20 +2074,11 @@
 <h2 id="registering-server">Registering server<a class="headerlink" href="#registering-server" title="Permanent link">#</a></h2>
 <p>Here it is the minimal configuration that is needed for new language
 server registration. Refer to the documentation of <code>lsp-mode.el</code> for
-the additional settings supported on registration time.
-<code>lsp-language-id-configuration</code> must be updated to contain the
-corresponding mode -> language id - in this case <code>(python-mode .
-"python")</code></p>
-<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">defvar</span> <span class="nv">lsp-language-id-configuration</span>
-  <span class="o">&#39;</span><span class="p">(</span><span class="o">...</span>
-    <span class="p">(</span><span class="nv">python-mode</span> <span class="o">.</span> <span class="s">&quot;python&quot;</span><span class="p">)</span>
-    <span class="o">...</span><span class="p">))</span>
-<span class="c1">;; if you are adding the support for your language server in separate repo use</span>
-<span class="c1">;; (add-to-list &#39;lsp-language-id-configuration &#39;(python-mode . &quot;python&quot;))</span>
-
-<span class="p">(</span><span class="nv">lsp-register-client</span>
+the additional settings supported on registration time.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nv">lsp-register-client</span>
  <span class="p">(</span><span class="nv">make-lsp-client</span> <span class="nb">:new-connection</span> <span class="p">(</span><span class="nv">lsp-stdio-connection</span> <span class="s">&quot;pyls&quot;</span><span class="p">)</span>
                   <span class="nb">:major-modes</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">python-mode</span><span class="p">)</span>
+                  <span class="nb">:language-id</span> <span class="s">&quot;python&quot;</span>
                   <span class="nb">:server-id</span> <span class="ss">&#39;pyls</span><span class="p">))</span>
 </code></pre></div>
 <p>If the language server supports environment variables to control
@@ -2096,6 +2087,7 @@ additional behavior, you can register that by using the
 <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nv">lsp-register-client</span>
  <span class="p">(</span><span class="nv">make-lsp-client</span> <span class="nb">:new-connection</span> <span class="p">(</span><span class="nv">lsp-stdio-connection</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;bash-language-server&quot;</span> <span class="s">&quot;start&quot;</span><span class="p">))</span>
                   <span class="nb">:major-modes</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">sh-mode</span><span class="p">)</span>
+                  <span class="nb">:language-id</span> <span class="s">&quot;shellscript&quot;</span>
                   <span class="nb">:priority</span> <span class="mi">-1</span>
                   <span class="nb">:environment-fn</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span>
                                     <span class="o">&#39;</span><span class="p">((</span><span class="s">&quot;EXPLAINSHELL_ENDPOINT&quot;</span> <span class="o">.</span> <span class="nv">lsp-bash-explainshell-endpoint</span><span class="p">)</span>
@@ -2138,7 +2130,7 @@ Example:</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2021</span>
     
   </small>
 </div>

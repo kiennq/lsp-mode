@@ -2794,9 +2794,10 @@ If WORKSPACE is not provided current workspace will be used."
         (require 'json)
         (fboundp 'json-serialize))
       `(json-serialize ,params
-                       :null-object nil
+                       :null-object :json-null
                        :false-object :json-false)
-    `(let ((json-false :json-false))
+    `(let ((json-false :json-false)
+           (json-null :json-null))
        (json-encode ,params))))
 
 (defun lsp--make-message (params)
@@ -6008,13 +6009,14 @@ WORKSPACE is the active workspace."
                           :object-type (if lsp-use-plists
                                            'plist
                                          'hash-table)
-                          :null-object nil
-                          :false-object nil)
+                          :null-object :json-null
+                          :false-object :json-false)
     `(let ((json-array-type 'vector)
            (json-object-type (if lsp-use-plists
                                  'plist
                                'hash-table))
-           (json-false nil))
+           (json-false :json-false)
+           (json-null :json-null))
        (json-read-from-string ,str))))
 
 (defun lsp--read-json-file (file-path)

@@ -5170,6 +5170,7 @@ It will show up only if current point has signature help."
 (defun lsp--action-trigger-suggest (_command)
   "Handler for editor.action.triggerSuggest."
   (cond
+<<<<<<< Updated upstream
    ((and (bound-and-true-p company-mode)
          (fboundp 'company-auto-begin)
          (fboundp 'company-post-command))
@@ -5179,6 +5180,10 @@ It will show up only if current point has signature help."
                          (company-minimum-prefix-length 0))
                      (company-auto-begin)
                      (company-post-command)))))
+=======
+   ((and company-mode (fboundp 'company-complete))
+    (run-at-time 0 nil (lambda () (call-interactively #'company-complete))))
+>>>>>>> Stashed changes
    (t
     (completion-at-point))))
 

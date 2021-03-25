@@ -4894,10 +4894,11 @@ RENDER-ALL - nil if only the signature should be rendered."
       #'lsp--render-element
       (if render-all
           contents
-        ;; Only render contents that have an available renderer.
         (seq-filter
-         (-andfn #'lsp-marked-string?
-                 (-compose #'lsp-get-renderer #'lsp:marked-string-language))
+         (-orfn #'stringp
+                ;; Only render contents that have an available renderer.
+                (-andfn #'lsp-marked-string?
+                        (-compose #'lsp-get-renderer #'lsp:marked-string-language)))
          contents)))
      (if (bound-and-true-p page-break-lines-mode)
          "\n\n"

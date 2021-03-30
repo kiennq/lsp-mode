@@ -845,6 +845,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-d/" class="md-nav__link">
+      D
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-dart" class="md-nav__link">
       Dart
     </a>
@@ -1094,6 +1107,19 @@
   <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-java" class="md-nav__link">
       Java
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-deno/" class="md-nav__link">
+      Javascript/Typescript (deno)
     </a>
   </li>
 
@@ -1966,8 +1992,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-rust-analyzer-cargo-load-out-dirs-from-check" class="md-nav__link">
-    lsp-rust-analyzer-cargo-load-out-dirs-from-check
+  <a href="#lsp-rust-analyzer-cargo-run-build-scripts" class="md-nav__link">
+    lsp-rust-analyzer-cargo-run-build-scripts
   </a>
   
 </li>
@@ -2298,6 +2324,19 @@
   </li>
 
         
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-zig/" class="md-nav__link">
+      Zig
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -2501,6 +2540,19 @@
   <li class="md-nav__item">
     <a href="../../tutorials/clojure-guide/" class="md-nav__link">
       Configuring Emacs as a Clojure IDE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/debugging-clojure-script/" class="md-nav__link">
+      Debugging Clojurescript
     </a>
   </li>
 
@@ -3114,8 +3166,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-rust-analyzer-cargo-load-out-dirs-from-check" class="md-nav__link">
-    lsp-rust-analyzer-cargo-load-out-dirs-from-check
+  <a href="#lsp-rust-analyzer-cargo-run-build-scripts" class="md-nav__link">
+    lsp-rust-analyzer-cargo-run-build-scripts
   </a>
   
 </li>
@@ -3542,10 +3594,9 @@ syntax highlighting.</p>
 <p><em>Default: <code>[]</code></em></p>
 <p>List of native rust-analyzer diagnostics to disable.</p>
 <hr />
-<h3 id="lsp-rust-analyzer-cargo-load-out-dirs-from-check"><code>lsp-rust-analyzer-cargo-load-out-dirs-from-check</code><a class="headerlink" href="#lsp-rust-analyzer-cargo-load-out-dirs-from-check" title="Permanent link">#</a></h3>
-<p><em>Default: <code>nil</code></em></p>
-<p>Whether to run ‘cargo check‘ on startup to get the correct value for
-package OUT_DIRs.</p>
+<h3 id="lsp-rust-analyzer-cargo-run-build-scripts"><code>lsp-rust-analyzer-cargo-run-build-scripts</code><a class="headerlink" href="#lsp-rust-analyzer-cargo-run-build-scripts" title="Permanent link">#</a></h3>
+<p><em>Default: <code>t</code></em></p>
+<p>Whether to run build scripts (‘build.rs‘) for more precise code analysis.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-rustfmt-extra-args"><code>lsp-rust-analyzer-rustfmt-extra-args</code><a class="headerlink" href="#lsp-rust-analyzer-rustfmt-extra-args" title="Permanent link">#</a></h3>
 <p><em>Default: <code>[]</code></em></p>
@@ -3574,8 +3625,7 @@ for formatting.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-proc-macro-enable"><code>lsp-rust-analyzer-proc-macro-enable</code><a class="headerlink" href="#lsp-rust-analyzer-proc-macro-enable" title="Permanent link">#</a></h3>
 <p><em>Default: <code>nil</code></em></p>
-<p>Enable Proc macro support; lsp-rust-analyzer-cargo-load-out-dirs-from-check
-must be enabled.</p>
+<p>Enable Proc macro support; implies lsp-rust-analyzer-cargo-run-build-scripts</p>
 <hr />
 <h3 id="lsp-rust-analyzer-import-merge-behaviour"><code>lsp-rust-analyzer-import-merge-behaviour</code><a class="headerlink" href="#lsp-rust-analyzer-import-merge-behaviour" title="Permanent link">#</a></h3>
 <p><em>Default: <code>full</code></em></p>
@@ -3641,7 +3691,7 @@ them with ‘crate‘ or the crate name they refer to.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 13, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 30, 2021</span>
     
   </small>
 </div>

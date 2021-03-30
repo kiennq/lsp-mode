@@ -96,6 +96,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "d",
+    "full-name": "D",
+    "server-name": "serve-d",
+    "server-url": "https://github.com/pure-d/serve-d",
+    "installation-url": "https://github.com/pure-d/serve-d#installation",
+    "debugger": "Yes"
+  },
+  {
     "name": "dhall",
     "full-name": "Dhall",
     "server-name": "dhall-lsp-server",
@@ -239,7 +247,7 @@
   },
   {
     "name": "deno",
-    "full-name": "Deno",
+    "full-name": "Javascript/Typescript (deno)",
     "server-name": "deno lsp",
     "server-url": "https://deno.land/#installation",
     "debugger": "Yes (Chrome)"
@@ -412,7 +420,7 @@
     "full-name": "Python",
     "server-name": "pyls",
     "server-url": "https://github.com/palantir/python-language-server",
-    "installation": "pip install ‘python-language-server[all]’",
+    "installation": "pip install 'python-language-server[all]'",
     "debugger": "Yes"
   },
   {
@@ -626,6 +634,14 @@
     "server-url": "https://github.com/redhat-developer/yaml-language-server",
     "installation": "npm install -g yaml-language-server",
     "lsp-install-server": "yamlls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "zig",
+    "full-name": "Zig",
+    "server-name": "zls",
+    "server-url": "https://github.com/zigtools/zls",
+    "installation-url": "https://github.com/zigtools/zls#installation",
     "debugger": "Not available"
   }
 ]

@@ -882,6 +882,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-face-semhl-event" class="md-nav__link">
+    lsp-face-semhl-event
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-face-semhl-function" class="md-nav__link">
     lsp-face-semhl-function
   </a>
@@ -1031,6 +1038,13 @@
         <li class="md-nav__item">
   <a href="#lsp-semantic-tokens-enable" class="md-nav__link">
     lsp-semantic-tokens-enable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp-semantic-tokens-honor-refresh-requests" class="md-nav__link">
+    lsp-semantic-tokens-honor-refresh-requests
   </a>
   
 </li>
@@ -2719,6 +2733,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-face-semhl-event" class="md-nav__link">
+    lsp-face-semhl-event
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-face-semhl-function" class="md-nav__link">
     lsp-face-semhl-function
   </a>
@@ -2873,6 +2894,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-semantic-tokens-honor-refresh-requests" class="md-nav__link">
+    lsp-semantic-tokens-honor-refresh-requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-semantic-tokens-warn-on-missing-face" class="md-nav__link">
     lsp-semantic-tokens-warn-on-missing-face
   </a>
@@ -2921,6 +2949,11 @@
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t (:inherit font-lock-type-face)))</code></p>
 <p>Face used for enums.</p>
+<hr />
+<h3 id="lsp-face-semhl-event"><code>lsp-face-semhl-event</code><a class="headerlink" href="#lsp-face-semhl-event" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>face</code></p>
+<p><em>Default:</em> <code>((t (:inherit font-lock-variable-name-face)))</code></p>
+<p>Face used for event properties.</p>
 <hr />
 <h3 id="lsp-face-semhl-function"><code>lsp-face-semhl-function</code><a class="headerlink" href="#lsp-face-semhl-function" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
@@ -3042,6 +3075,14 @@ be preferred whenever possible, unless
 <p>Enable/disable support for semantic tokens.
 As defined by the Language Server Protocol 3.16.</p>
 <hr />
+<h3 id="lsp-semantic-tokens-honor-refresh-requests"><code>lsp-semantic-tokens-honor-refresh-requests</code><a class="headerlink" href="#lsp-semantic-tokens-honor-refresh-requests" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Whether to honor semanticTokens/refresh requests.</p>
+<p>When set to nil, refresh requests will be silently discarded.
+When set to t, semantic tokens will be re-requested for all buffers
+associated with the requesting language server.</p>
+<hr />
 <h3 id="lsp-semantic-tokens-warn-on-missing-face"><code>lsp-semantic-tokens-warn-on-missing-face</code><a class="headerlink" href="#lsp-semantic-tokens-warn-on-missing-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
@@ -3057,7 +3098,7 @@ or modifier type returned by a language server has no face associated with it.</
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 15, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 25, 2021</span>
     
   </small>
 </div>

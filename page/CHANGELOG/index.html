@@ -1590,6 +1590,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-nginx/" class="md-nav__link">
+      Nginx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-nim/" class="md-nav__link">
       Nim
     </a>
@@ -1746,6 +1759,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-pylsp/" class="md-nav__link">
+      Python (Pylsp)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-jedi/" class="md-nav__link">
       Python (Jedi Language Server)
     </a>
@@ -1760,7 +1786,7 @@
 
   <li class="md-nav__item">
     <a href="../lsp-pyls/" class="md-nav__link">
-      Python (Palantir)
+      Python (Palantir deprecated)
     </a>
   </li>
 
@@ -1969,6 +1995,19 @@
   <li class="md-nav__item">
     <a href="../lsp-latex/" class="md-nav__link">
       TeX, LaTeX, etc (texlab, external)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-toml/" class="md-nav__link">
+      TOML
     </a>
   </li>
 
@@ -2698,12 +2737,23 @@
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased-801">Unreleased 8.0.1<a class="headerlink" href="#unreleased-801" title="Permanent link">#</a></h2>
 <ul>
+<li>Drop support for emacs 26.1 and 26.2</li>
+<li>Added support for <code>textDocument/linkedEditingRange</code> via
+    <code>lsp-iedit-linked-ranges</code> and <code>lsp-evil-multiedit-ranges</code> (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/pull/3166">#3166</a>)</li>
 <li>Add <a href="https://github.com/graphql/graphiql/tree/main/packages/graphql-language-service-cli#readme">GraphQL Language
     Server</a>
     for autocomplete graphql query</li>
 <li>Added <code>lsp-auto-touch-files</code>. When it is non-nil it will auto-create
     the file on the disk before sending <code>textDocument/didOpen</code>.</li>
 <li>Add <code>lsp-log-io-allowlist-methods</code> for debugging purposes.</li>
+<li>Enable `lsp-lens-enable` by default.</li>
+<li>Add TOML support.</li>
+<li>Add Nginx support.</li>
+<li>Disable noisy features from <code>lsp-ui</code>:
+    <code>lsp-ui-sideline-show-code-actions</code> and
+    <code>lsp-ui-doc-show-with-cursor</code>.</li>
+<li>Fix org mode support. #3258</li>
 </ul>
 <h2 id="release-800">Release 8.0.0<a class="headerlink" href="#release-800" title="Permanent link">#</a></h2>
 <ul>
@@ -3108,7 +3158,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2021</span>
     
   </small>
 </div>

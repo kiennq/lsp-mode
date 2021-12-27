@@ -868,6 +868,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-face-semhl-default-library" class="md-nav__link">
+    lsp-face-semhl-default-library
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp-face-semhl-definition" class="md-nav__link">
+    lsp-face-semhl-definition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-face-semhl-deprecated" class="md-nav__link">
     lsp-face-semhl-deprecated
   </a>
@@ -980,6 +994,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-face-semhl-static" class="md-nav__link">
+    lsp-face-semhl-static
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-face-semhl-string" class="md-nav__link">
     lsp-face-semhl-string
   </a>
@@ -1045,6 +1066,13 @@
         <li class="md-nav__item">
   <a href="#lsp-semantic-tokens-honor-refresh-requests" class="md-nav__link">
     lsp-semantic-tokens-honor-refresh-requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp-semantic-tokens-max-concurrent-idle-requests" class="md-nav__link">
+    lsp-semantic-tokens-max-concurrent-idle-requests
   </a>
   
 </li>
@@ -1835,6 +1863,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../lsp-nginx/" class="md-nav__link">
+      Nginx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../lsp-nim/" class="md-nav__link">
       Nim
     </a>
@@ -1991,6 +2032,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../lsp-pylsp/" class="md-nav__link">
+      Python (Pylsp)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../lsp-jedi/" class="md-nav__link">
       Python (Jedi Language Server)
     </a>
@@ -2005,7 +2059,7 @@
 
   <li class="md-nav__item">
     <a href="../../lsp-pyls/" class="md-nav__link">
-      Python (Palantir)
+      Python (Palantir deprecated)
     </a>
   </li>
 
@@ -2214,6 +2268,19 @@
   <li class="md-nav__item">
     <a href="../../lsp-latex/" class="md-nav__link">
       TeX, LaTeX, etc (texlab, external)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../lsp-toml/" class="md-nav__link">
+      TOML
     </a>
   </li>
 
@@ -2732,6 +2799,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-face-semhl-default-library" class="md-nav__link">
+    lsp-face-semhl-default-library
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp-face-semhl-definition" class="md-nav__link">
+    lsp-face-semhl-definition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-face-semhl-deprecated" class="md-nav__link">
     lsp-face-semhl-deprecated
   </a>
@@ -2844,6 +2925,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-face-semhl-static" class="md-nav__link">
+    lsp-face-semhl-static
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-face-semhl-string" class="md-nav__link">
     lsp-face-semhl-string
   </a>
@@ -2914,6 +3002,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-semantic-tokens-max-concurrent-idle-requests" class="md-nav__link">
+    lsp-semantic-tokens-max-concurrent-idle-requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-semantic-tokens-warn-on-missing-face" class="md-nav__link">
     lsp-semantic-tokens-warn-on-missing-face
   </a>
@@ -2952,6 +3047,16 @@
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t :inherit font-lock-constant-face))</code></p>
 <p>Face used for semantic highlighting scopes matching constant scopes.</p>
+<hr />
+<h3 id="lsp-face-semhl-default-library"><code>lsp-face-semhl-default-library</code><a class="headerlink" href="#lsp-face-semhl-default-library" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>face</code></p>
+<p><em>Default:</em> <code>((t :inherit font-lock-builtin-face))</code></p>
+<p>Face used for defaultLibrary modifier.</p>
+<hr />
+<h3 id="lsp-face-semhl-definition"><code>lsp-face-semhl-definition</code><a class="headerlink" href="#lsp-face-semhl-definition" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>face</code></p>
+<p><em>Default:</em> <code>((t :inherit font-lock-function-name-face :weight bold))</code></p>
+<p>Face used for definition modifier.</p>
 <hr />
 <h3 id="lsp-face-semhl-deprecated"><code>lsp-face-semhl-deprecated</code><a class="headerlink" href="#lsp-face-semhl-deprecated" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
@@ -3036,6 +3141,11 @@ Unless overridden by a more specific face association.</p>
 <p><em>Default:</em> <code>((t (:inherit font-lock-string-face :slant italic)))</code></p>
 <p>Face used for regexps.</p>
 <hr />
+<h3 id="lsp-face-semhl-static"><code>lsp-face-semhl-static</code><a class="headerlink" href="#lsp-face-semhl-static" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>face</code></p>
+<p><em>Default:</em> <code>((t :inherit font-lock-keyword-face))</code></p>
+<p>Face used for static modifier.</p>
+<hr />
 <h3 id="lsp-face-semhl-string"><code>lsp-face-semhl-string</code><a class="headerlink" href="#lsp-face-semhl-string" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>face</code></p>
 <p><em>Default:</em> <code>((t (:inherit font-lock-string-face)))</code></p>
@@ -3079,7 +3189,7 @@ be preferred whenever possible, unless
 <hr />
 <h3 id="lsp-semantic-tokens-apply-modifiers"><code>lsp-semantic-tokens-apply-modifiers</code><a class="headerlink" href="#lsp-semantic-tokens-apply-modifiers" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
-<p><em>Default:</em> <code>nil</code></p>
+<p><em>Default:</em> <code>t</code></p>
 <p>Whether semantic tokens should take token modifiers into account.</p>
 <hr />
 <h3 id="lsp-semantic-tokens-enable"><code>lsp-semantic-tokens-enable</code><a class="headerlink" href="#lsp-semantic-tokens-enable" title="Permanent link">#</a></h3>
@@ -3096,6 +3206,11 @@ As defined by the Language Server Protocol 3.16.</p>
 When set to t, semantic tokens will be re-requested for all buffers
 associated with the requesting language server.</p>
 <hr />
+<h3 id="lsp-semantic-tokens-max-concurrent-idle-requests"><code>lsp-semantic-tokens-max-concurrent-idle-requests</code><a class="headerlink" href="#lsp-semantic-tokens-max-concurrent-idle-requests" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>integer</code></p>
+<p><em>Default:</em> <code>1</code></p>
+<p>Maximum number of on-idle token requests to be dispatched simultaneously.</p>
+<hr />
 <h3 id="lsp-semantic-tokens-warn-on-missing-face"><code>lsp-semantic-tokens-warn-on-missing-face</code><a class="headerlink" href="#lsp-semantic-tokens-warn-on-missing-face" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
@@ -3111,7 +3226,7 @@ or modifier type returned by a language server has no face associated with it.</
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2021</span>
     
   </small>
 </div>

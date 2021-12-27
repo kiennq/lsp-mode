@@ -1666,6 +1666,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-nginx/" class="md-nav__link">
+      Nginx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-nim/" class="md-nav__link">
       Nim
     </a>
@@ -1822,6 +1835,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-pylsp/" class="md-nav__link">
+      Python (Pylsp)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-jedi/" class="md-nav__link">
       Python (Jedi Language Server)
     </a>
@@ -1836,7 +1862,7 @@
 
   <li class="md-nav__item">
     <a href="../lsp-pyls/" class="md-nav__link">
-      Python (Palantir)
+      Python (Palantir deprecated)
     </a>
   </li>
 
@@ -2045,6 +2071,19 @@
   <li class="md-nav__item">
     <a href="../lsp-latex/" class="md-nav__link">
       TeX, LaTeX, etc (texlab, external)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-toml/" class="md-nav__link">
+      TOML
     </a>
   </li>
 
@@ -2623,12 +2662,24 @@ Benchmarks show that Emacs 27 is <code>~15 times</code> faster than Emacs when u
 <p>Increase the amount of data which Emacs reads from the process. Again the emacs default is too low 4k considering that the some of the language server responses are in 800k - 3M range.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">read-process-output-max</span> <span class="p">(</span><span class="nf">*</span> <span class="mi">1024</span> <span class="mi">1024</span><span class="p">))</span> <span class="c1">;; 1mb</span>
+<p><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">read-process-output-max</span> <span class="p">(</span><span class="nf">*</span> <span class="mi">1024</span> <span class="mi">1024</span><span class="p">))</span> <span class="c1">;; 1mb</span>
 </code></pre></div>
-<ul>
+- Use <code>plists</code> for deserialization. <code>lsp-mode</code> can be compiled in 2 modes <code>plist</code> and <code>hash-table</code> based <code>lsp-use-plists</code> flag. <code>plist</code>s provide better performance in serialization and also put less presure than <code>hash-table</code>s. To switch to <code>plist</code> you have to perform 2 steps:</p>
+<ol>
+<li>Put the following in your config:
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-use-plists</span> <span class="no">t</span><span class="p">)</span>
+</code></pre></div></li>
+<li>Recompile <code>lsp-mode</code> and related packages. One way to achieve that is to perform the following steps:</li>
+<li>Delete <code>elc</code> files.
+<div class="highlight"><pre><span></span><code>find ~/.emacs.d/elpa -name <span class="s2">&quot;*.elc&quot;</span> -delete
+</code></pre></div></li>
+<li>Restart emacs and do:
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nv">byte-recompile-directory</span> <span class="p">(</span><span class="nf">expand-file-name</span> <span class="s">&quot;~/.emacs.d/elpa/&quot;</span><span class="p">)</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+<em>NB:</em> make sure that <code>lsp-use-plist</code> is <code>t</code> when you are performing the compilation.</li>
 <li>Optional: Disable <code>lsp-ui</code>. Normally, <code>lsp-ui</code> is very fast but in some systems (especially when using <code>Windows</code>) <code>lsp-ui</code> overlays and popups might slow down emacs.</li>
 <li>Optional: fine-tune <code>lsp-idle-delay</code>. This variable determines how often lsp-mode will refresh the highlights, lenses, links, etc while you type.</li>
-</ul>
+</ol>
 <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-idle-delay</span> <span class="mf">0.500</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="gccemacs">gccemacs<a class="headerlink" href="#gccemacs" title="Permanent link">#</a></h3>
@@ -2649,6 +2700,7 @@ to be watched for performance reasons, you can add a regexp to that variable exc
 <li><code>M-x profiler-start</code> and select <code>CPU</code></li>
 <li>Reproduce the slow behavior.</li>
 <li><code>M-x profiler-stop</code></li>
+<li><code>M-x profiler-report</code> to create a report</li>
 <li>In the profiler report expand all nodes by doing <code>C-u TAB</code>.</li>
 </ul>
 <p><em>Note:</em> - <code>lsp-mode</code> is just a frontend and the performance depends on server as well. Some servers (e. g. Palantir's Python Language Server) might be slow when performing auto-completion.</p>
@@ -2660,7 +2712,7 @@ to be watched for performance reasons, you can add a regexp to that variable exc
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2021</span>
     
   </small>
 </div>

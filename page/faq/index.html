@@ -732,8 +732,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-disable-automatic-installation-for-particular-language-server" class="md-nav__link">
-    How do I disable automatic installation for particular language server?
+  <a href="#how-do-i-disable-automatic-installation" class="md-nav__link">
+    How do I disable automatic installation?
   </a>
   
 </li>
@@ -1700,6 +1700,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-nginx/" class="md-nav__link">
+      Nginx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-nim/" class="md-nav__link">
       Nim
     </a>
@@ -1856,6 +1869,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-pylsp/" class="md-nav__link">
+      Python (Pylsp)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-jedi/" class="md-nav__link">
       Python (Jedi Language Server)
     </a>
@@ -1870,7 +1896,7 @@
 
   <li class="md-nav__item">
     <a href="../lsp-pyls/" class="md-nav__link">
-      Python (Palantir)
+      Python (Palantir deprecated)
     </a>
   </li>
 
@@ -2079,6 +2105,19 @@
   <li class="md-nav__item">
     <a href="../lsp-latex/" class="md-nav__link">
       TeX, LaTeX, etc (texlab, external)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-toml/" class="md-nav__link">
+      TOML
     </a>
   </li>
 
@@ -2646,8 +2685,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-disable-automatic-installation-for-particular-language-server" class="md-nav__link">
-    How do I disable automatic installation for particular language server?
+  <a href="#how-do-i-disable-automatic-installation" class="md-nav__link">
+    How do I disable automatic installation?
   </a>
   
 </li>
@@ -2680,7 +2719,7 @@
 </code></pre></div></p>
 <hr />
 <h3 id="i-have-multiple-language-servers-registered-for-language-foo-which-one-will-be-used-when-opening-a-project"><img alt="❔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2754.svg" title=":grey_question:" /> I have multiple language servers registered for language FOO. Which one will be used when opening a project?<a class="headerlink" href="#i-have-multiple-language-servers-registered-for-language-foo-which-one-will-be-used-when-opening-a-project" title="Permanent link">#</a></h3>
-<p>The one with highest priority wins. <code>lsp-clients.el</code> predefined servers have priority -1, lower than external packages (priority 0 if unspecified). If a server is registered with <code>:add-on?</code> flag set to <code>t</code> it will be started in parallel to the other servers that are registered for the current mode.</p>
+<p>The one with highest priority wins. Servers defined in <code>lsp-mode</code> tend to have lower priority than the external packages (priority 0 if unspecified). If a server is registered with <code>:add-on?</code> flag set to <code>t</code> it will be started in parallel to the other servers that are registered for the current mode. If the server that you want to use is not with the highest priority you may use <code>lsp-disabled-clients</code> to disable the server with higher <code>priority</code> or use <code>lsp-enabled-clients</code> to enable only the servers you want to use. In order to find the server ids you may check <code>*lsp-log*</code> buffer.</p>
 <hr />
 <h3 id="i-have-multiple-language-servers-for-language-foo-and-i-want-to-select-the-server-per-project-what-can-i-do"><img alt="❔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2754.svg" title=":grey_question:" /> I have multiple language servers for language <code>FOO</code> and I want to select the server per project, what can I do?<a class="headerlink" href="#i-have-multiple-language-servers-for-language-foo-and-i-want-to-select-the-server-per-project-what-can-i-do" title="Permanent link">#</a></h3>
 <p>You may create <code>dir-local</code> for each of the projects and specify list of <code>lsp-enabled-clients</code>. This will narrow the list of the clients that are going to be tested for the project.</p>
@@ -2709,17 +2748,11 @@
 <h3 id="when-using-clojure-with-clojure-lsp-lsp-mode-is-interfering-with-typing-e-g-deleting-whitespace-while-typing-how-to-fix-that"><img alt="❔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2754.svg" title=":grey_question:" /> When using <code>clojure</code> with <code>clojure-lsp</code> <code>lsp-mode</code> is interfering with typing (e. g. deleting whitespace while typing), how to fix that?<a class="headerlink" href="#when-using-clojure-with-clojure-lsp-lsp-mode-is-interfering-with-typing-e-g-deleting-whitespace-while-typing-how-to-fix-that" title="Permanent link">#</a></h3>
 <p>The issue is caused by <code>clojure-lsp</code> server being more aggressive with formatting(deleting whitespaces) and <code>aggressive-indent-mode</code> being on and calling it while typing. The solution is either to disable <code>aggressive-indent-mode</code> or to disable <code>lsp-mode</code> formatting via <code>lsp-enable-indentation</code>.</p>
 <hr />
-<h3 id="how-do-i-disable-automatic-installation-for-particular-language-server"><img alt="❔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2754.svg" title=":grey_question:" /> How do I disable automatic installation for particular language server?<a class="headerlink" href="#how-do-i-disable-automatic-installation-for-particular-language-server" title="Permanent link">#</a></h3>
-<p>Solution:
-    Disable for one client:
-    <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nb">with-eval-after-load</span> <span class="ss">&#39;lsp-bash</span>
-   <span class="p">(</span><span class="nb">setf</span> <span class="p">(</span><span class="nv">lsp-client-download-server-fn</span> <span class="p">(</span><span class="nf">gethash</span> <span class="ss">&#39;bash-ls</span> <span class="nv">lsp-clients</span><span class="p">))</span> <span class="no">nil</span><span class="p">))</span>
+<h3 id="how-do-i-disable-automatic-installation"><img alt="❔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2754.svg" title=":grey_question:" /> How do I disable automatic installation?<a class="headerlink" href="#how-do-i-disable-automatic-installation" title="Permanent link">#</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">```</span> <span class="n">elisp</span>
+<span class="p">(</span><span class="n">setq</span> <span class="n">lsp</span><span class="o">-</span><span class="n">enable</span><span class="o">-</span><span class="n">suggest</span><span class="o">-</span><span class="n">server</span><span class="o">-</span><span class="n">download</span> <span class="n">nil</span><span class="p">)</span>
+<span class="err">```</span>
 </code></pre></div>
-    Disable for all clients:
-    <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;lsp-mode-hook</span>
-   <span class="p">(</span><span class="nb">lambda</span> <span class="p">()</span> <span class="p">(</span><span class="nf">mapc</span> <span class="p">(</span><span class="nb">lambda</span> <span class="p">(</span><span class="nv">client</span><span class="p">)</span> <span class="p">(</span><span class="nb">setf</span> <span class="p">(</span><span class="nv">lsp-client-download-server-fn</span> <span class="nv">client</span><span class="p">)</span> <span class="no">nil</span><span class="p">))</span>
-                    <span class="p">(</span><span class="nv">ht-values</span> <span class="nv">lsp-clients</span><span class="p">))))</span>
-</code></pre></div></p>
                 
                   
                     
@@ -2728,7 +2761,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2021</span>
     
   </small>
 </div>

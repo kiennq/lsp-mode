@@ -1042,6 +1042,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../page/lsp-ansible/" class="md-nav__link">
+      Ansible
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../page/lsp-bash/" class="md-nav__link">
       Bash
     </a>
@@ -1250,6 +1263,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../page/lsp-emmet/" class="md-nav__link">
+      Emmet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../page/lsp-erlang/" class="md-nav__link">
       Erlang
     </a>
@@ -1395,6 +1421,19 @@
   <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-haskell" class="md-nav__link">
       Haskell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-idris/" class="md-nav__link">
+      Idris
     </a>
   </li>
 
@@ -1562,6 +1601,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../page/lsp-magik/" class="md-nav__link">
+      Magik
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../page/lsp-markdown/" class="md-nav__link">
       Markdown
     </a>
@@ -1654,7 +1706,20 @@
 
   <li class="md-nav__item">
     <a href="../../page/lsp-perl/" class="md-nav__link">
-      Perl
+      Perl (Perl::LanguageServer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-perlnavigator/" class="md-nav__link">
+      Perl (Navigator)
     </a>
   </li>
 
@@ -1862,7 +1927,46 @@
 
   <li class="md-nav__item">
     <a href="../../page/lsp-solargraph/" class="md-nav__link">
-      Ruby
+      Ruby (Solargraph)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-sorbet/" class="md-nav__link">
+      Ruby (Sorbet)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-steep/" class="md-nav__link">
+      Ruby (Steep)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-typeprof/" class="md-nav__link">
+      Ruby (TypeProf)
     </a>
   </li>
 
@@ -2017,6 +2121,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../page/lsp-ttcn3/" class="md-nav__link">
+      TTCN3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../page/lsp-v/" class="md-nav__link">
       V
     </a>
@@ -2082,7 +2199,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../page/lsp-vim/" class="md-nav__link">
+    <a href="../../page/lsp-vimscript/" class="md-nav__link">
       Vimscript
     </a>
   </li>
@@ -2096,7 +2213,20 @@
 
   <li class="md-nav__item">
     <a href="../../page/lsp-vetur/" class="md-nav__link">
-      Vue
+      Vue 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-volar/" class="md-nav__link">
+      Vue 3
     </a>
   </li>
 
@@ -2315,6 +2445,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tutorials/php-guide/" class="md-nav__link">
+      Configuring Emacs as a PHP IDE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../tutorials/how-to-turn-off/" class="md-nav__link">
       A guide on disabling/enabling lsp-mode features
     </a>
@@ -2512,11 +2655,27 @@
                 
                 
                 <h1 id="sample-configuration">Sample configuration:<a class="headerlink" href="#sample-configuration" title="Permanent link">#</a></h1>
-<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-sqls-connections</span>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nv">add-hook</span> <span class="ss">&#39;sql-mode-hook</span> <span class="ss">&#39;lsp</span><span class="p">)</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-sqls-workspace-config-path</span> <span class="no">nil</span><span class="p">)</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-sqls-connections</span>
     <span class="o">&#39;</span><span class="p">(((</span><span class="nv">driver</span> <span class="o">.</span> <span class="s">&quot;mysql&quot;</span><span class="p">)</span> <span class="p">(</span><span class="nv">dataSourceName</span> <span class="o">.</span> <span class="s">&quot;yyoncho:local@tcp(localhost:3306)/foo&quot;</span><span class="p">))</span>
+      <span class="p">((</span><span class="nv">driver</span> <span class="o">.</span> <span class="s">&quot;mssql&quot;</span><span class="p">)</span> <span class="p">(</span><span class="nv">dataSourceName</span> <span class="o">.</span> <span class="s">&quot;Server=localhost;Database=sammy;User Id=yyoncho;Password=hunter2;&quot;</span><span class="p">))</span>
       <span class="p">((</span><span class="nv">driver</span> <span class="o">.</span> <span class="s">&quot;postgresql&quot;</span><span class="p">)</span> <span class="p">(</span><span class="nv">dataSourceName</span> <span class="o">.</span> <span class="s">&quot;host=127.0.0.1 port=5432 user=yyoncho password=local dbname=sammy sslmode=disable&quot;</span><span class="p">))))</span>
 </code></pre></div>
-<p>After you have started the server you have pick server connection and database via <code>M-x lsp-execute-code-action</code> (or corresponding <code>M-x lsp-sqls-*</code>) command.</p>
+<p>Alternatively, you can leave <code>lsp-sqls-workspace-config-path</code> to the default "workspace" value, and put a json file in <code>&lt;project&gt;/.sqls/config.json</code> containing
+<div class="highlight"><pre><span></span><code>{
+  &quot;sqls&quot;: {
+    &quot;connections&quot;: [
+      {
+        &quot;driver&quot;: &quot;mysql&quot;,
+        &quot;dataSourceName&quot;: &quot;yyoncho:local@tcp(localhost:3306)/foo&quot;
+      }, 
+      …etc…
+    ]
+  }
+}
+</code></pre></div></p>
+<p>Now lsp should start in sql-mode buffers, and you can pick a server connection with <code>M-x lsp-execute-code-action</code> and "Switch Connections" (or directly with <code>M-x lsp-sql-switch-connection</code>). You can change database with <code>M-x lsp-execute-code-action</code> and "Switch Database" (or <code>M-x lsp-sql-switch-database</code>).</p>
                 
                   
                     
@@ -2525,7 +2684,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2022</span>
     
   </small>
 </div>

@@ -1044,6 +1044,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-ansible/" class="md-nav__link">
+      Ansible
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-bash/" class="md-nav__link">
       Bash
     </a>
@@ -1252,6 +1265,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-emmet/" class="md-nav__link">
+      Emmet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-erlang/" class="md-nav__link">
       Erlang
     </a>
@@ -1397,6 +1423,19 @@
   <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-haskell" class="md-nav__link">
       Haskell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-idris/" class="md-nav__link">
+      Idris
     </a>
   </li>
 
@@ -1564,6 +1603,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-magik/" class="md-nav__link">
+      Magik
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-markdown/" class="md-nav__link">
       Markdown
     </a>
@@ -1656,7 +1708,20 @@
 
   <li class="md-nav__item">
     <a href="../lsp-perl/" class="md-nav__link">
-      Perl
+      Perl (Perl::LanguageServer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-perlnavigator/" class="md-nav__link">
+      Perl (Navigator)
     </a>
   </li>
 
@@ -1864,7 +1929,46 @@
 
   <li class="md-nav__item">
     <a href="../lsp-solargraph/" class="md-nav__link">
-      Ruby
+      Ruby (Solargraph)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-sorbet/" class="md-nav__link">
+      Ruby (Sorbet)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-steep/" class="md-nav__link">
+      Ruby (Steep)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-typeprof/" class="md-nav__link">
+      Ruby (TypeProf)
     </a>
   </li>
 
@@ -2019,6 +2123,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-ttcn3/" class="md-nav__link">
+      TTCN3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-v/" class="md-nav__link">
       V
     </a>
@@ -2084,7 +2201,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-vim/" class="md-nav__link">
+    <a href="../lsp-vimscript/" class="md-nav__link">
       Vimscript
     </a>
   </li>
@@ -2098,7 +2215,20 @@
 
   <li class="md-nav__item">
     <a href="../lsp-vetur/" class="md-nav__link">
-      Vue
+      Vue 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-volar/" class="md-nav__link">
+      Vue 3
     </a>
   </li>
 
@@ -2440,6 +2570,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../tutorials/php-guide/" class="md-nav__link">
+      Configuring Emacs as a PHP IDE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../tutorials/how-to-turn-off/" class="md-nav__link">
       A guide on disabling/enabling lsp-mode features
     </a>
@@ -2737,7 +2880,6 @@
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased-801">Unreleased 8.0.1<a class="headerlink" href="#unreleased-801" title="Permanent link">#</a></h2>
 <ul>
-<li>Drop support for emacs 26.1 and 26.2</li>
 <li>Added support for <code>textDocument/linkedEditingRange</code> via
     <code>lsp-iedit-linked-ranges</code> and <code>lsp-evil-multiedit-ranges</code> (see
     <a href="https://github.com/emacs-lsp/lsp-mode/pull/3166">#3166</a>)</li>
@@ -2754,6 +2896,27 @@
     <code>lsp-ui-sideline-show-code-actions</code> and
     <code>lsp-ui-doc-show-with-cursor</code>.</li>
 <li>Fix org mode support. #3258</li>
+<li>Add
+    <a href="https://github.com/remarkjs/remark-language-server">remark-language-server</a></li>
+<li>Deprecate unified-languge-server in favor of remark-language-server</li>
+<li>Made it possible to disable <code>lsp-response-timeout</code> entirely.</li>
+<li>Fix csharp-ls startup on emacs@master (and emacs@emacs-28 on macOS)
+    due to a switch posix<sub>spawn</sub> and not setting proper sigmask
+    on child processes.</li>
+<li>Fix incorrect <code>lsp-fsharp</code> defcustom types.</li>
+<li>Add <code>lsp-fsharp-generate-binlog</code>.</li>
+<li>Update installation mechanism for fsautocomplete (lsp-fsharp) to use
+    <code>dotnet tool install -g</code>.</li>
+<li>Fix fsautocomplete (lsp-fsharp) startup on emacs@master (and
+    emacs@emacs-28 on macOS) due to a switch <code>posix_spawn</code> and not
+    setting proper sigmask on child processes.</li>
+<li>Add TypeProf support.</li>
+<li>Add Volar support.</li>
+<li>Add Ansible support.</li>
+<li>Disable <code>lsp-steep-use-bundler</code> by default.</li>
+<li>Add <a href="https://github.com/idris-community/idris2-lsp">idris2-lsp</a></li>
+<li>Add <a href="https://github.com/aca/emmet-ls">emmet-ls</a></li>
+<li>Support all <code>initializationOptions</code> in <code>typescript-language-server</code></li>
 </ul>
 <h2 id="release-800">Release 8.0.0<a class="headerlink" href="#release-800" title="Permanent link">#</a></h2>
 <ul>
@@ -2771,8 +2934,8 @@
 <li>Add support for insert/replace when performing completion. When
     using <code>company</code> pressing <code>C-u RET</code> will perform the alternative
     action (the default is replace, but can be changed).</li>
-<li>Add <code>lsp-auto-save-changed-buffers</code> which save the changed buffers
-    after any text edit operation by lsp-mode.</li>
+<li>Add <code>lsp-after-apply-edits-hook</code> that run after every workspace edit
+    is applied.</li>
 <li>Safe renamed <code>lsp-diagnose</code> to <code>lsp-doctor</code>.</li>
 <li>Add <code>lsp-modeline-code-actions-segments</code> for a better customization.</li>
 <li>Add <a href="https://github.com/sumneko/lua-language-server">Lua Language
@@ -3158,7 +3321,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2022</span>
     
   </small>
 </div>

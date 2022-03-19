@@ -1098,6 +1098,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-ansible/" class="md-nav__link">
+      Ansible
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-bash/" class="md-nav__link">
       Bash
     </a>
@@ -1306,6 +1319,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-emmet/" class="md-nav__link">
+      Emmet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-erlang/" class="md-nav__link">
       Erlang
     </a>
@@ -1451,6 +1477,19 @@
   <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-haskell" class="md-nav__link">
       Haskell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-idris/" class="md-nav__link">
+      Idris
     </a>
   </li>
 
@@ -1618,6 +1657,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-magik/" class="md-nav__link">
+      Magik
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-markdown/" class="md-nav__link">
       Markdown
     </a>
@@ -1710,7 +1762,20 @@
 
   <li class="md-nav__item">
     <a href="../lsp-perl/" class="md-nav__link">
-      Perl
+      Perl (Perl::LanguageServer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-perlnavigator/" class="md-nav__link">
+      Perl (Navigator)
     </a>
   </li>
 
@@ -1918,7 +1983,46 @@
 
   <li class="md-nav__item">
     <a href="../lsp-solargraph/" class="md-nav__link">
-      Ruby
+      Ruby (Solargraph)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-sorbet/" class="md-nav__link">
+      Ruby (Sorbet)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-steep/" class="md-nav__link">
+      Ruby (Steep)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-typeprof/" class="md-nav__link">
+      Ruby (TypeProf)
     </a>
   </li>
 
@@ -2073,6 +2177,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../lsp-ttcn3/" class="md-nav__link">
+      TTCN3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../lsp-v/" class="md-nav__link">
       V
     </a>
@@ -2138,7 +2255,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lsp-vim/" class="md-nav__link">
+    <a href="../lsp-vimscript/" class="md-nav__link">
       Vimscript
     </a>
   </li>
@@ -2152,7 +2269,20 @@
 
   <li class="md-nav__item">
     <a href="../lsp-vetur/" class="md-nav__link">
-      Vue
+      Vue 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../lsp-volar/" class="md-nav__link">
+      Vue 3
     </a>
   </li>
 
@@ -2360,6 +2490,19 @@
   <li class="md-nav__item">
     <a href="../../tutorials/CPP-guide/" class="md-nav__link">
       Configuring Emacs as a C/C++ IDE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/php-guide/" class="md-nav__link">
+      Configuring Emacs as a PHP IDE
     </a>
   </li>
 
@@ -2668,19 +2811,15 @@ client has been loaded.</p>
 <h2 id="sections">Sections<a class="headerlink" href="#sections" title="Permanent link">#</a></h2>
 <p><code>lsp-mode</code> provides tools to bridge emacs <code>defcustom</code> as a language
 configuration sections properties(see <a href="https://microsoft.github.io/language-server-protocol/specification#workspace_configuration">specification
-workspace/configuration</a>).
-In addition you may use <code>lsp-generate-settings</code> from <a href="https://github.com/emacs-lsp/lsp-mode/blob/master/scripts/lsp-generate-settings.el">Generate Settings
-script</a>
-to generate <code>defcustom</code> from <code>package.json</code> VScode plugin manifest.
-Example:</p>
-<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nb">defcustom</span> <span class="nv">lsp-foo-language-server-property</span> <span class="s">&quot;bar&quot;</span>
+workspace/configuration</a>). In addition you may use <code>lsp-generate-settings</code>
+from <a href="https://github.com/emacs-lsp/lsp-mode/blob/master/scripts/lsp-generate-settings.el">Generate Settings script</a> to generate <code>lsp-defcustom</code> from <code>package.json</code>
+VScode plugin manifest. Example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nv">defcustom-lsp</span> <span class="nv">lsp-foo-language-server-property</span> <span class="s">&quot;bar&quot;</span>
   <span class="s">&quot;Demo property.&quot;</span>
   <span class="nb">:group</span> <span class="ss">&#39;foo-ls</span>
-  <span class="nb">:risky</span> <span class="no">t</span><span class="p">)</span>
+  <span class="nb">:lsp-path</span> <span class="s">&quot;foo.section.property&quot;</span><span class="p">)</span>
 
-<span class="p">(</span><span class="nv">lsp-register-custom-settings</span> <span class="o">&#39;</span><span class="p">((</span><span class="s">&quot;foo.section.property&quot;</span> <span class="nv">lsp-foo-language-server-property</span><span class="p">)))</span>
-
-<span class="p">(</span><span class="nv">lsp-configuration-section</span>  <span class="s">&quot;foo&quot;</span><span class="p">)</span>
+<span class="p">(</span><span class="nv">lsp-configuration-section</span> <span class="s">&quot;foo&quot;</span><span class="p">)</span>
 <span class="c1">;; =&gt;  ((&quot;foo&quot; (&quot;settings&quot; (&quot;property&quot; . &quot;bar&quot;))))</span>
 </code></pre></div>
 <h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">#</a></h2>
@@ -2696,7 +2835,7 @@ Example:</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2022</span>
     
   </small>
 </div>

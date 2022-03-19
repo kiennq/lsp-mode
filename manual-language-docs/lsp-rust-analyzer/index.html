@@ -10,7 +10,7 @@
       
       
       
-        <meta name="author" content="ercdll1337@gmail.com">
+        <meta name="author" content="yyoncho">
       
       
         <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/manual-language-docs/lsp-rust-analyzer/">
@@ -1042,6 +1042,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../page/lsp-ansible/" class="md-nav__link">
+      Ansible
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../page/lsp-bash/" class="md-nav__link">
       Bash
     </a>
@@ -1250,6 +1263,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../page/lsp-emmet/" class="md-nav__link">
+      Emmet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../page/lsp-erlang/" class="md-nav__link">
       Erlang
     </a>
@@ -1395,6 +1421,19 @@
   <li class="md-nav__item">
     <a href="https://emacs-lsp.github.io/lsp-haskell" class="md-nav__link">
       Haskell
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-idris/" class="md-nav__link">
+      Idris
     </a>
   </li>
 
@@ -1562,6 +1601,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../page/lsp-magik/" class="md-nav__link">
+      Magik
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../page/lsp-markdown/" class="md-nav__link">
       Markdown
     </a>
@@ -1654,7 +1706,20 @@
 
   <li class="md-nav__item">
     <a href="../../page/lsp-perl/" class="md-nav__link">
-      Perl
+      Perl (Perl::LanguageServer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-perlnavigator/" class="md-nav__link">
+      Perl (Navigator)
     </a>
   </li>
 
@@ -1862,7 +1927,46 @@
 
   <li class="md-nav__item">
     <a href="../../page/lsp-solargraph/" class="md-nav__link">
-      Ruby
+      Ruby (Solargraph)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-sorbet/" class="md-nav__link">
+      Ruby (Sorbet)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-steep/" class="md-nav__link">
+      Ruby (Steep)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-typeprof/" class="md-nav__link">
+      Ruby (TypeProf)
     </a>
   </li>
 
@@ -2017,6 +2121,19 @@
 
 
   <li class="md-nav__item">
+    <a href="../../page/lsp-ttcn3/" class="md-nav__link">
+      TTCN3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
     <a href="../../page/lsp-v/" class="md-nav__link">
       V
     </a>
@@ -2082,7 +2199,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../page/lsp-vim/" class="md-nav__link">
+    <a href="../../page/lsp-vimscript/" class="md-nav__link">
       Vimscript
     </a>
   </li>
@@ -2096,7 +2213,20 @@
 
   <li class="md-nav__item">
     <a href="../../page/lsp-vetur/" class="md-nav__link">
-      Vue
+      Vue 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../page/lsp-volar/" class="md-nav__link">
+      Vue 3
     </a>
   </li>
 
@@ -2304,6 +2434,19 @@
   <li class="md-nav__item">
     <a href="../../tutorials/CPP-guide/" class="md-nav__link">
       Configuring Emacs as a C/C++ IDE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorials/php-guide/" class="md-nav__link">
+      Configuring Emacs as a PHP IDE
     </a>
   </li>
 
@@ -2571,6 +2714,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#snippet-insertionrefactor" class="md-nav__link">
+    Snippet insertion/refactor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#open-cargotoml" class="md-nav__link">
     Open Cargo.toml
   </a>
@@ -2673,6 +2823,15 @@
 <h3 id="auto-import">auto-import<a class="headerlink" href="#auto-import" title="Permanent link">#</a></h3>
 <p>Get a list of possible auto import candidates with <code>lsp-execute-code-action</code></p>
 <p><img alt="" src="../../examples/lsp-rust-analyzer-auto-import.png" /></p>
+<h3 id="snippet-insertionrefactor">Snippet insertion/refactor<a class="headerlink" href="#snippet-insertionrefactor" title="Permanent link">#</a></h3>
+<p>To support refactorings that require snippet insertion(eg. generating
+derive clause etc), make sure that you have enabled <code>yasnippet</code> and
+<code>yas-minor-mode</code>. If you are using <code>use-package</code>, you can do something
+like this:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nb">use-package</span> <span class="nv">yasnippet</span>
+  <span class="nb">:ensure</span> <span class="no">t</span>
+  <span class="nb">:hook</span> <span class="p">((</span><span class="nv">lsp-mode</span> <span class="o">.</span> <span class="nv">yas-minor-mode</span><span class="p">)))</span>
+</code></pre></div>
 <h3 id="open-cargotoml">Open Cargo.toml<a class="headerlink" href="#open-cargotoml" title="Permanent link">#</a></h3>
 <p><code>lsp-rust-analyzer-open-cargo-toml</code> opens the Cargo.toml closest to the current file. Calling it with a universal argument will open the Cargo.toml in another window.</p>
 <p>Corresponds to <a href="https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/dev/lsp-extensions.md#open-cargotoml">the rust-analyzer LSP extension</a></p>
@@ -2728,7 +2887,7 @@ modifying the signature that is displayed by eldoc.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 27, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 19, 2022</span>
     
   </small>
 </div>
@@ -2738,6 +2897,12 @@ modifying the signature that is displayed by eldoc.</p>
               
                 
 
+  
+
+
+  <h2 id="__comments">Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>var disqus_config=function(){this.page.url="https://emacs-lsp.github.io/lsp-mode/manual-language-docs/lsp-rust-analyzer/",this.page.identifier="/manual-language-docs/lsp-rust-analyzer/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//emacs-lsp.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>

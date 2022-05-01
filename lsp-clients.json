@@ -424,6 +424,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "nim",
+    "full-name": "nimlangserver",
+    "server-name": "nimlangserver",
+    "server-url": "https://github.com/nim-lang/langserver",
+    "installation": "nimble install nimlangserver",
+    "debugger": "Not available"
+  },
+  {
     "name": "ocaml-lsp-server",
     "full-name": "OCaml",
     "server-name": "ocaml-lsp-server",
@@ -445,6 +453,15 @@
     "server-name": "ocaml-language-server",
     "server-url": "https://github.com/ocaml-lsp/ocaml-language-server",
     "installation-url": "https://github.com/ocaml-lsp/ocaml-language-server#server",
+    "debugger": "Not available"
+  },
+  {
+    "name": "openscad",
+    "full-name": "OpenSCAD",
+    "server-name": "openscad-language-server",
+    "server-url": "https://github.com/dzhu/openscad-language-server",
+    "installation-url": "https://github.com/dzhu/openscad-language-server",
+    "installation": "cargo install openscad-language-server",
     "debugger": "Not available"
   },
   {
@@ -736,10 +753,9 @@
   {
     "name": "toml",
     "full-name": "TOML",
-    "server-name": "taplo-lsp",
-    "server-url": "https://github.com/tamasfe/taplo/tree/master/taplo-lsp",
-    "installation-url": "https://taplo.tamasfe.dev/lsp/",
-    "installation": "cargo install taplo-lsp",
+    "server-name": "taplo",
+    "server-url": "https://github.com/tamasfe/taplo",
+    "installation": "cargo install taplo-cli",
     "debugger": "Not available"
   },
   {

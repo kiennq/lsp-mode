@@ -4195,8 +4195,8 @@ Example: <tag/> -&gt; <tag /></p>
 <p>The preferred quote style for attribute values.</p>
 <hr />
 <h3 id="lsp-xml-server-command"><code>lsp-xml-server-command</code><a class="headerlink" href="#lsp-xml-server-command" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(repeat string)</code></p>
-<p><em>Default:</em> <code>(java -jar /home/runner/.emacs.d/.cache/lsp/xmlls/org.eclipse.lemminx-uber.jar)</code></p>
+<p><em>Type:</em> <code>(choice (repeat string) (function))</code></p>
+<p><em>Default:</em> <code>(closure (t) nil (or (and (lsp-xml-has-java?) lsp-xml-prefer-jar (list java -jar lsp-xml-jar-file)) (list lsp-xml-bin-file)))</code></p>
 <p>Xml server command.</p>
 <hr />
 <h3 id="lsp-xml-server-vmargs"><code>lsp-xml-server-vmargs</code><a class="headerlink" href="#lsp-xml-server-vmargs" title="Permanent link">#</a></h3>
@@ -4250,7 +4250,7 @@ Example: <tag/> -&gt; <tag /></p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 28, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 1, 2024</span>
       
     
   </small>

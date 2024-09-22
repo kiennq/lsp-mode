@@ -136,6 +136,16 @@
     "debugger": "Yes (netcoredbg)"
   },
   {
+    "name": "csharp-roslyn",
+    "common-group-name": "csharp",
+    "full-name": "C# (csharp-roslyn)",
+    "server-name": "Microsoft.CodeAnalysis.LanguageServer (Roslyn)",
+    "server-url": "https://github.com/dotnet/roslyn/tree/main/src/LanguageServer",
+    "installation": "Supports automatic installation via NuGet",
+    "lsp-install-server": "csharp-roslyn",
+    "debugger": "Yes (netcoredbg)"
+  },
+  {
     "name": "ccls",
     "full-name": "C++",
     "server-name": "ccls",
@@ -246,6 +256,15 @@
     "server-url": "https://github.com/nikeee/dot-language-server",
     "installation": "npm install -g dot-language-server",
     "lsp-install-server": "dot-ls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "earthly",
+    "full-name": "Earthfile language server",
+    "server-name": "earthlyls",
+    "server-url": "https://github.com/glehmann/earthlyls",
+    "installation": "cargo install earthlyls",
+    "lsp-install-server": "earthlyls",
     "debugger": "Not available"
   },
   {
@@ -395,8 +414,8 @@
     "name": "groovy",
     "full-name": "Groovy",
     "server-name": "groovy-language-server",
-    "server-url": "https://github.com/prominic/groovy-language-server",
-    "installation-url": "https://github.com/prominic/groovy-language-server#build",
+    "server-url": "https://github.com/GroovyLanguageServer/groovy-language-server",
+    "installation-url": "https://github.com/GroovyLanguageServer/groovy-language-server#build",
     "debugger": "Not available"
   },
   {
@@ -589,6 +608,14 @@
     "server-name": "marksman",
     "server-url": "https://github.com/artempyanykh/marksman",
     "installation-url": "https://github.com/artempyanykh/marksman",
+    "debugger": "Not available"
+  },
+  {
+    "name": "meson",
+    "full-name": "Meson",
+    "server-name": "mesonlsp",
+    "server-url": "https://github.com/JCWasmx86/mesonlsp",
+    "installation-url": "https://github.com/JCWasmx86/mesonlsp",
     "debugger": "Not available"
   },
   {
@@ -914,11 +941,11 @@
     "debugger": "Not available"
   },
   {
-    "name": "ruff-lsp",
+    "name": "ruff",
     "full-name": "Python",
-    "server-name": "ruff-lsp",
-    "server-url": "https://github.com/charliermarsh/ruff-lsp",
-    "installation": "pip install ruff-lsp",
+    "server-name": "ruff",
+    "server-url": "https://github.com/astral-sh/ruff",
+    "installation": "pip install ruff (previous pip install ruff-lsp)",
     "debugger": "Not available"
   },
   {
@@ -991,11 +1018,19 @@
     "debugger": "Not available"
   },
   {
+    "name": "sql",
+    "full-name": "SQL (sql)",
+    "server-name": "sql-language-server",
+    "server-url": "https://github.com/joe-re/sql-language-server",
+    "installation": "npm i -g sql-language-server",
+    "debugger": "Not available"
+  },
+  {
     "name": "sqls",
     "full-name": "SQL (sqls)",
     "server-name": "sqls",
-    "server-url": "https://github.com/lighttiger2505/sqls",
-    "installation": "go install github.com/lighttiger2505/sqls@latest",
+    "server-url": "https://github.com/sqls-server/sqls",
+    "installation": "go install github.com/sqls-server/sqls@latest",
     "debugger": "Not available"
   },
   {

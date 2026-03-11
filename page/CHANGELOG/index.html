@@ -1220,6 +1220,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-biome/" class="md-nav__link">
+        Biome
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-buf/" class="md-nav__link">
         Buf/Protocol Buffers (Buf CLI)
       </a>
@@ -1376,6 +1390,20 @@
     <li class="md-nav__item">
       <a href="../lsp-cobol/" class="md-nav__link">
         COBOL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-crates/" class="md-nav__link">
+        Crates
       </a>
     </li>
   
@@ -1584,8 +1612,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-erlang.md" class="md-nav__link">
-        Erlang
+      <a href="../lsp-erlang-ls/" class="md-nav__link">
+        Erlang (Erlang Language Server)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-erlang-elp/" class="md-nav__link">
+        Erlang (ELP)
       </a>
     </li>
   
@@ -1627,7 +1669,21 @@
   
     <li class="md-nav__item">
       <a href="../lsp-fortran/" class="md-nav__link">
-        Fortran
+        Fortran (fortls)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-fortitude/" class="md-nav__link">
+        Fortran (fortitude)
       </a>
     </li>
   
@@ -1950,6 +2006,20 @@
     <li class="md-nav__item">
       <a href="../lsp-julia/" class="md-nav__link">
         Julia
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-just/" class="md-nav__link">
+        Just
       </a>
     </li>
   
@@ -2564,7 +2634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://github.com/astral-sh/ty" class="md-nav__link">
+      <a href="../lsp-python-ty/" class="md-nav__link">
         Python (ty)
       </a>
     </li>
@@ -2636,6 +2706,20 @@
     <li class="md-nav__item">
       <a href="../lsp-roc/" class="md-nav__link">
         Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ron-lsp.md" class="md-nav__link">
+        RON
       </a>
     </li>
   
@@ -3068,6 +3152,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-typst/" class="md-nav__link">
+        Typst
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-v/" class="md-nav__link">
         V
       </a>
@@ -3194,6 +3292,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-wasm-language-tools/" class="md-nav__link">
+        WebAssembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-wgsl.md" class="md-nav__link">
         wgsl
       </a>
@@ -3236,7 +3348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+      <a href="../lsp-kubernetes-helm/" class="md-nav__link">
         YAML (helm-ls)
       </a>
     </li>
@@ -3674,7 +3786,7 @@
   
     <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/dap-mode/page/python-poetry-pyenv/" class="md-nav__link">
-        Python, debbuging with poetry + pyenv
+        Python, debugging with poetry + pyenv
       </a>
     </li>
   
@@ -3966,6 +4078,7 @@
               
                 <!--
   Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Copyright (C) 2016-2026 lsp-mode maintainers
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to
@@ -4003,6 +4116,45 @@
 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased-901">Unreleased 9.0.1<a class="headerlink" href="#unreleased-901" title="Permanent link">#</a></h2>
 <ul>
+<li>Fix <code>lsp-zig--zls-url</code> to use the new zigtools.org url (see:
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/4445">#4445</a>)</li>
+<li>Fix <code>lsp--npm-dependency-path</code> to return correct executable path and
+    improve error message</li>
+<li>Add support for <a href="https://github.com/PlasmaFAIR/fortitude">Fortitude</a>
+    (Fortran)</li>
+<li>Clear diagnostics after workspace edits to prevent stale diagnostics
+    at wrong line numbers after operations like <code>lsp-organize-imports</code>
+    (see <a href="https://github.com/emacs-lsp/lsp-mode/issues/3888">#3888</a>)</li>
+<li>Add support for <code>workspace/willRenameFiles</code> and
+    <code>workspace/didRenameFiles</code> when using <code>vc-git-rename-file</code>.</li>
+<li>Fix documentation to show unevaluated expressions for file/directory
+    defcustom defaults instead of machine-specific paths (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/4924">#4924</a>)</li>
+<li>Fix invalid regex patterns in <code>lsp-file-watch-ignored-directories</code>
+    causing crashes (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/3439">#3439</a>)</li>
+<li>Fix documentation website sidebar visibility on tablet landscape
+    screens (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/4946">#4946</a>)</li>
+<li>Add <code>lsp-fix-all</code> command and <code>lsp-fix-all-on-save</code> option for
+    <code>source.fixAll</code> code action support (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/1842">#1842</a>)</li>
+<li>Add notification handlers for Deno language server
+    (<code>deno/didRefreshDenoConfigurationTree</code>,
+    <code>deno/didChangeDenoConfiguration</code>, <code>deno/didUpgradeCheck</code>).</li>
+<li>Fix "Unknown notification: semgrep/rulesRefreshed" warning in
+    lsp-semgrep client.</li>
+<li>Add <code>lsp-install-server</code> support for Deno LSP via npm.</li>
+<li>Add diagnostic and formatter custom settings for <a href="https://github.com/rcjsuen/dockerfile-language-server-nodejs">Dockerfile
+    language
+    server</a>.</li>
+<li>Fix "Eager macro-expansion failure" errors with lsp-interface pcase
+    patterns (see #4723)</li>
+<li>Add support for <a href="https://github.com/Myriad-Dreamin/tinymist">Typst
+    (Tinymist)</a> language
+    server.</li>
+<li>Add support for <code>just</code> files through just-lsp.</li>
+<li>Add support for RON files through ron-lsp.</li>
 <li>Add explicit flag to enable (or disable) JSON validation.</li>
 <li>Fix Accommodate renaming of lsp-postgres binaries</li>
 <li>Fix <code>lsp-org</code> for org >= 9.7 (see #4300)</li>
@@ -4039,6 +4191,9 @@
     <code>["ruff" "server"]</code> instead of <code>["ruff-lsp"]</code>.</li>
 <li>Add futhark support</li>
 <li>Optimize overlay creation by checking window visibility first</li>
+<li>Optimize hook setup by avoiding unnecessary handler creation when
+    <code>lsp-enable-on-type-formatting</code> or <code>lsp-signature-auto-activate</code> are
+    disabled</li>
 <li>Replace the per-interface <code>(INTERFACE ...)</code> pcase forms with a
     single, unified <code>(lsp-interface INTERFACE ...)</code> form. The
     per-interface forms are no longer generated. <strong>This is a breaking
@@ -4102,6 +4257,14 @@
 <li>Add support for the
     <code>javascript.preferences.importModuleSpecifierEnding</code> and
     <code>typescript.preferences.importModuleSpecifierEnding</code> preferences.</li>
+<li>Fix missing ty (a fast python language server) inlay hints when
+    <code>lsp-use-plist</code> is true</li>
+<li>Add wasm-language-tools support</li>
+<li>Add <code>lsp-ruff-multi-root</code> variable to allow disabling multi-root
+    option for ruff client</li>
+<li>Add support for <code>~crates-lsp~</code></li>
+<li>Remove outdated Ruff option and add new lint-related options</li>
+<li>Add new Nextflow client customizations</li>
 </ul>
 <h2 id="900">9.0.0<a class="headerlink" href="#900" title="Permanent link">#</a></h2>
 <ul>
@@ -4675,6 +4838,9 @@
 <li>added backends for: Bash, C++, CSS, Dart, Elixir, Fortran, Go,
     Groovy, HTML, Javascript/Typescript, Javascript/Typescript, Ocaml,
     PHP, Python, Ruby, Rust, Vue, Flow</li>
+<li>Fix lsp-xml-bin-download-url to use correct release url as specified
+    at <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases">GitHub
+    Docs</a></li>
 </ul>
 
 <!-- Source file information -->
@@ -4684,7 +4850,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 13, 2025</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 11, 2026</span>
       
     
   </small>

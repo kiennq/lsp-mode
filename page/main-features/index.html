@@ -1326,6 +1326,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-biome/" class="md-nav__link">
+        Biome
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-buf/" class="md-nav__link">
         Buf/Protocol Buffers (Buf CLI)
       </a>
@@ -1482,6 +1496,20 @@
     <li class="md-nav__item">
       <a href="../lsp-cobol/" class="md-nav__link">
         COBOL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-crates/" class="md-nav__link">
+        Crates
       </a>
     </li>
   
@@ -1690,8 +1718,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-erlang.md" class="md-nav__link">
-        Erlang
+      <a href="../lsp-erlang-ls/" class="md-nav__link">
+        Erlang (Erlang Language Server)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-erlang-elp/" class="md-nav__link">
+        Erlang (ELP)
       </a>
     </li>
   
@@ -1733,7 +1775,21 @@
   
     <li class="md-nav__item">
       <a href="../lsp-fortran/" class="md-nav__link">
-        Fortran
+        Fortran (fortls)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-fortitude/" class="md-nav__link">
+        Fortran (fortitude)
       </a>
     </li>
   
@@ -2056,6 +2112,20 @@
     <li class="md-nav__item">
       <a href="../lsp-julia/" class="md-nav__link">
         Julia
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-just/" class="md-nav__link">
+        Just
       </a>
     </li>
   
@@ -2670,7 +2740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="https://github.com/astral-sh/ty" class="md-nav__link">
+      <a href="../lsp-python-ty/" class="md-nav__link">
         Python (ty)
       </a>
     </li>
@@ -2742,6 +2812,20 @@
     <li class="md-nav__item">
       <a href="../lsp-roc/" class="md-nav__link">
         Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ron-lsp.md" class="md-nav__link">
+        RON
       </a>
     </li>
   
@@ -3174,6 +3258,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-typst/" class="md-nav__link">
+        Typst
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-v/" class="md-nav__link">
         V
       </a>
@@ -3300,6 +3398,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-wasm-language-tools/" class="md-nav__link">
+        WebAssembly
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-wgsl.md" class="md-nav__link">
         wgsl
       </a>
@@ -3342,7 +3454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+      <a href="../lsp-kubernetes-helm/" class="md-nav__link">
         YAML (helm-ls)
       </a>
     </li>
@@ -3647,7 +3759,7 @@
   
     <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/dap-mode/page/python-poetry-pyenv/" class="md-nav__link">
-        Python, debbuging with poetry + pyenv
+        Python, debugging with poetry + pyenv
       </a>
     </li>
   
@@ -3912,6 +4024,7 @@
               
                 <!--
   Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Copyright (C) 2016-2026 lsp-mode maintainers
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to
@@ -4046,7 +4159,7 @@ pressed(typically, <code>}</code>, <code>RET</code>). This behaviour is controll
 <code>lsp-enable-on-type-formatting</code> and it is enabled by default.</p>
 <p>You can also trigger format on save by setting the variable <code>lsp-format-buffer-on-save</code> to a non-nil value. To select what major modes to format use <code>lsp-format-buffer-on-save-list</code>.</p>
 <h2 id="debugger">Debugger<a class="headerlink" href="#debugger" title="Permanent link">#</a></h2>
-<p><code>lsp-mode</code> integrates with <a href="https://emacs-lsp.github.io/dap-mode/">dap-mode</a> with implements the DAP(Debugger Adapter Protocol), for more information check the <a href="https://emacs-lsp.github.io/dap-mode/"><code>dap-mode</code> documentation</a>.</p>
+<p><code>lsp-mode</code> integrates with <a href="https://emacs-lsp.github.io/dap-mode/">dap-mode</a> which implements the DAP (Debugger Adapter Protocol), for more information check the <a href="https://emacs-lsp.github.io/dap-mode/"><code>dap-mode</code> documentation</a>.</p>
 <p><img alt="" src="../../examples/lsp-dart-flutter-debug.gif" /></p>
 <h2 id="integrations">Integrations<a class="headerlink" href="#integrations" title="Permanent link">#</a></h2>
 <p><code>lsp-mode</code> supports many integrations for improve the user experience like <a href="https://github.com/emacs-lsp/lsp-treemacs">treemacs</a>, <a href="https://github.com/emacs-lsp/helm-lsp">Helm</a>, <a href="https://github.com/emacs-lsp/lsp-ivy">Ivy</a> and others.</p>
@@ -4059,7 +4172,7 @@ pressed(typically, <code>}</code>, <code>RET</code>). This behaviour is controll
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 13, 2025</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 10, 2022</span>
       
     
   </small>

@@ -1670,6 +1670,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fish/" class="md-nav__link">
+        Fish (fish-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-fortran/" class="md-nav__link">
         Fortran (fortls)
       </a>
@@ -1952,6 +1966,20 @@
     <li class="md-nav__item">
       <a href="../lsp-typescript/" class="md-nav__link">
         JavaScript/TypeScript (theia-ide)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typescript-go/" class="md-nav__link">
+        JavaScript/TypeScript (Go native)
       </a>
     </li>
   
@@ -2370,7 +2398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-odin-ols-server.md" class="md-nav__link">
+      <a href="../lsp-ols/" class="md-nav__link">
         Odin (ols)
       </a>
     </li>
@@ -2642,6 +2670,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-intelephense-phpdoc-use-fully-qualified-names" class="md-nav__link">
+    lsp-intelephense-phpdoc-use-fully-qualified-names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-intelephense-rename-exclude" class="md-nav__link">
     lsp-intelephense-rename-exclude
   </a>
@@ -2747,6 +2782,20 @@
     <li class="md-nav__item">
       <a href="../lsp-pwsh/" class="md-nav__link">
         Powershell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-prisma/" class="md-nav__link">
+        Prisma
       </a>
     </li>
   
@@ -3209,6 +3258,20 @@
     <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/lsp-sourcekit" class="md-nav__link">
         Swift
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-tailwindcss/" class="md-nav__link">
+        Tailwind CSS
       </a>
     </li>
   
@@ -4227,6 +4290,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-intelephense-phpdoc-use-fully-qualified-names" class="md-nav__link">
+    lsp-intelephense-phpdoc-use-fully-qualified-names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-intelephense-rename-exclude" class="md-nav__link">
     lsp-intelephense-rename-exclude
   </a>
@@ -4428,6 +4498,12 @@ features.</p>
 <p>Minimum version of PHP to refer to. Affects code actions, diagnostic &amp;
 completions.</p>
 <hr />
+<h3 id="lsp-intelephense-phpdoc-use-fully-qualified-names"><code>lsp-intelephense-phpdoc-use-fully-qualified-names</code><a class="headerlink" href="#lsp-intelephense-phpdoc-use-fully-qualified-names" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>If non-nil, Intelephense will use fully qualified names in generated PHPDoc.
+This corresponds to the LSP setting <code>intelephense.phpdoc.useFullyQualifiedNames</code>.</p>
+<hr />
 <h3 id="lsp-intelephense-rename-exclude"><code>lsp-intelephense-rename-exclude</code><a class="headerlink" href="#lsp-intelephense-rename-exclude" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
 <p><em>Default:</em> <code>[**/vendor/**]</code></p>
@@ -4447,7 +4523,7 @@ definitions are found in excluded files/folders.</p>
 <hr />
 <h3 id="lsp-intelephense-stubs"><code>lsp-intelephense-stubs</code><a class="headerlink" href="#lsp-intelephense-stubs" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
-<p><em>Default:</em> <code>[apache bcmath bz2 calendar com_dotnet Core ctype curl date dba dom enchant exif fileinfo filter fpm ftp gd hash iconv imap interbase intl json ldap libxml mbstring mcrypt meta mssql mysqli oci8 odbc openssl pcntl pcre PDO pdo_ibm pdo_mysql pdo_pgsql pdo_sqlite pgsql Phar posix pspell readline recode Reflection regex session shmop SimpleXML snmp soap sockets sodium SPL sqlite3 standard superglobals sybase sysvmsg sysvsem sysvshm tidy tokenizer wddx xml xmlreader xmlrpc xmlwriter Zend OPcache zip zlib]</code></p>
+<p><em>Default:</em> <code>[apache bcmath bz2 calendar com_dotnet Core ctype curl date dba dom enchant exif fileinfo filter fpm ftp gd hash iconv imap interbase intl json ldap libxml mbstring mcrypt meta mssql mysqli oci8 odbc openssl pcntl pcre PDO pdo_ibm pdo_mysql pdo_pgsql pdo_sqlite pgsql Phar posix pspell random readline recode Reflection regex session shmop SimpleXML snmp soap sockets sodium SPL sqlite3 standard superglobals sybase sysvmsg sysvsem sysvshm tidy tokenizer wddx xml xmlreader xmlrpc xmlwriter Zend OPcache zip zlib]</code></p>
 <p>Configure stub files for built in symbols and common
 extensions. The default setting includes PHP core and all
 bundled extensions.</p>
@@ -4472,7 +4548,7 @@ language server.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 11, 2026</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 7, 2026</span>
       
     
   </small>

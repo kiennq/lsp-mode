@@ -199,8 +199,8 @@
     "name": "clojure",
     "full-name": "Clojure",
     "server-name": "clojure-lsp",
-    "server-url": "https://github.com/snoe/clojure-lsp",
-    "installation-url": "https://github.com/snoe/clojure-lsp",
+    "server-url": "https://github.com/clojure-lsp/clojure-lsp",
+    "installation-url": "https://github.com/clojure-lsp/clojure-lsp",
     "lsp-install-server": "clojure-lsp",
     "debugger": "Not available"
   },
@@ -368,6 +368,14 @@
     "debugger": "Yes (netcoredbg)"
   },
   {
+    "name": "fish",
+    "full-name": "Fish shell",
+    "server-name": "fish-lsp",
+    "server-url": "https://fish-lsp.dev/",
+    "installation-url": "https://github.com/ndonfris/fish-lsp#installation",
+    "debugger": "Not available"
+  },
+  {
     "name": "fortitude",
     "full-name": "Fortran",
     "server-name": "fortitude",
@@ -515,6 +523,16 @@
     "server-url": "https://flow.org",
     "installation-url": "https://flow.org/",
     "debugger": "Yes (Firefox/Chrome)"
+  },
+  {
+    "name": "typescript-go",
+    "common-group-name": "javascript",
+    "full-name": "JavaScript/TypeScript (Go native)",
+    "server-name": "typescript-go",
+    "server-url": "https://github.com/microsoft/typescript-go",
+    "installation": "npm install -g @typescript/native-preview",
+    "lsp-install-server": "tsgo",
+    "debugger": "Not available"
   },
   {
     "name": "typescript",
@@ -833,6 +851,7 @@
   {
     "name": "ols",
     "full-name": "Odin Language Server",
+    "common-group-name": "odin-ols",
     "server-name": "ols",
     "server-url": "https://github.com/DanielGavin/ols",
     "installation-url": "https://github.com/DanielGavin/ols",
@@ -908,6 +927,15 @@
     "server-url": "https://github.com/phpactor/phpactor",
     "installation-url": "https://phpactor.readthedocs.io/en/master/usage/standalone.html#installation-global",
     "debugger": "yes"
+  },
+  {
+    "name": "prisma",
+    "full-name": "Prisma",
+    "server-name": "prisma-language-server",
+    "server-url": "https://github.com/prisma/language-tools",
+    "installation": "npm i -g @prisma/language-server",
+    "lsp-install-server": "prisma-ls",
+    "debugger": "Not available"
   },
   {
     "name": "pwsh",
@@ -1217,6 +1245,15 @@
     "server-name": "stree",
     "server-url": "https://github.com/ruby-syntax-tree/syntax_tree",
     "installation-url": "https://github.com/ruby-syntax-tree/syntax_tree#installation",
+    "debugger": "Not available"
+  },
+  {
+    "name": "tailwindcss",
+    "full-name": "Tailwind CSS",
+    "server-name": "tailwindcss-language-server",
+    "server-url": "https://github.com/tailwindlabs/tailwindcss-intellisense/tree/main/packages/tailwindcss-language-server",
+    "installation": "npm install -g @tailwindcss/language-server",
+    "lsp-install-server": "tailwindcss",
     "debugger": "Not available"
   },
   {

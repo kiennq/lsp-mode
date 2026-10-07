@@ -1668,6 +1668,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fish/" class="md-nav__link">
+        Fish (fish-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-fortran/" class="md-nav__link">
         Fortran (fortls)
       </a>
@@ -1950,6 +1964,20 @@
     <li class="md-nav__item">
       <a href="../lsp-typescript/" class="md-nav__link">
         JavaScript/TypeScript (theia-ide)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typescript-go/" class="md-nav__link">
+        JavaScript/TypeScript (Go native)
       </a>
     </li>
   
@@ -2368,7 +2396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-odin-ols-server.md" class="md-nav__link">
+      <a href="../lsp-ols/" class="md-nav__link">
         Odin (ols)
       </a>
     </li>
@@ -2510,6 +2538,20 @@
     <li class="md-nav__item">
       <a href="../lsp-pwsh/" class="md-nav__link">
         Powershell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-prisma/" class="md-nav__link">
+        Prisma
       </a>
     </li>
   
@@ -2972,6 +3014,20 @@
     <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/lsp-sourcekit" class="md-nav__link">
         Swift
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-tailwindcss/" class="md-nav__link">
+        Tailwind CSS
       </a>
     </li>
   
@@ -3556,8 +3612,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#unreleased-901" class="md-nav__link">
-    Unreleased 9.0.1
+  <a href="#unreleased-1001" class="md-nav__link">
+    Unreleased 10.0.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1000" class="md-nav__link">
+    10.0.0
   </a>
   
 </li>
@@ -3969,8 +4032,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#unreleased-901" class="md-nav__link">
-    Unreleased 9.0.1
+  <a href="#unreleased-1001" class="md-nav__link">
+    Unreleased 10.0.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1000" class="md-nav__link">
+    10.0.0
   </a>
   
 </li>
@@ -4114,7 +4184,97 @@
 
 <!-- Markdown content -->
 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
-<h2 id="unreleased-901">Unreleased 9.0.1<a class="headerlink" href="#unreleased-901" title="Permanent link">#</a></h2>
+<h2 id="unreleased-1001">Unreleased 10.0.1<a class="headerlink" href="#unreleased-1001" title="Permanent link">#</a></h2>
+<ul>
+<li>Add <code>.slnx</code> solution file support to <code>lsp-roslyn</code>:
+    <code>lsp-roslyn--find-solution-file</code> now also detects the new XML-based
+    solution format (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/5106">#5106</a>)</li>
+<li>Fix <code>lsp-ruff</code> sending empty <code>lint.select~/~extendSelect~/~ignore</code>
+    arrays by default: ruff interprets empty arrays as "zero rules",
+    silently swallowing all diagnostics. The options now default to nil
+    (not sent) so ruff uses its own defaults and project configuration
+    (see <a href="https://github.com/emacs-lsp/lsp-mode/issues/5119">#5119</a>)</li>
+<li>Unregister the Python <code>ty</code> client as an add-on: <code>ty</code> now provides
+    full language server features (hover, completion, go-to-definition,
+    inlay hints), so running it in parallel with other Python servers
+    such as <code>pylsp</code> yields duplicated results, e.g. duplicated xref
+    definitions (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/5122">#5122</a>)</li>
+<li>Add <code>lsp-pylsp-plugins-ruff-format-enabled</code> to expose
+    python-lsp-ruff's <code>formatEnabled</code> setting.</li>
+<li>Fix <code>lsp-install-server</code> download from the Visual Studio Code
+    Marketplace.</li>
+<li>Add support for LSP 3.17 InlayHint features: <code>textEdits</code>, <code>tooltip</code>,
+    <code>data</code>, <code>InlayHintLabelPart</code> (per-part
+    <code>tooltip~/~location~/~command</code>), <code>inlayHint/resolve</code>, interactive
+    mouse handler, and <code>lsp-inlay-hint-accept</code> command (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/4775">#4775</a>)</li>
+<li>Add <code>lsp-diagnostics-flymake-message-formatter</code> defcustom for
+    customizing how an LSP diagnostic is rendered into the flymake text
+    string; the default appends the code in brackets, and users can
+    suppress it, prepend the source tool, add a severity prefix, etc.
+    (see: <a href="https://github.com/emacs-lsp/lsp-mode/pull/5036">#5036</a>).</li>
+<li>Append the LSP diagnostic code (e.g. <code>reportUnusedExpression</code>,
+    <code>E501</code>) to flymake messages, mirroring what flycheck already exposes
+    via <code>flycheck-error-id</code> (see:
+    <a href="https://github.com/emacs-lsp/lsp-mode/pull/5036">#5036</a>).</li>
+<li>Add support for <a href="https://github.com/tailwindlabs/tailwindcss-intellisense">Tailwind
+    CSS</a>
+    language server.</li>
+<li>Overhaul <code>lsp-face-semhl-*</code> faces to cover the full LSP 3.17
+    semantic token spec (see:
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/5040">#5040</a>)<ul>
+<li>Add dedicated faces <code>lsp-face-semhl-enum-member</code>,
+    <code>lsp-face-semhl-modifier</code>, <code>lsp-face-semhl-decorator</code>.</li>
+<li>Fix <code>enumMember</code> mapping (was <code>lsp-face-semhl-constant</code>, now
+    <code>lsp-face-semhl-enum-member</code>); default rendering unchanged by
+    inheritance.</li>
+<li>Map the previously missing <code>modifier</code> (LSP 3.16) and <code>decorator</code>
+    (LSP 3.17) token types in the default alist.</li>
+<li>Cascade the inheritance hierarchy through <code>lsp-face-semhl-*</code>:
+    setting <code>lsp-face-semhl-type</code> now propagates to
+    <code>struct~/~class~/~interface~/~enum~/~typeParameter~/~namespace</code>;
+    setting <code>lsp-face-semhl-variable</code> propagates to
+    <code>property~/~event~/~parameter</code>; <code>number</code> cascades from
+    <code>lsp-face-semhl-constant</code>, <code>regexp</code> from
+    <code>lsp-face-semhl-string</code>. <strong>Breaking-adjacent</strong>: users who relied
+    on the previous non-cascading behavior should now override the
+    parent face.</li>
+<li>Trim non-spec entries from the default
+    <code>lsp-semantic-token-faces</code> alist: <code>enumConstant</code>, <code>member</code>,
+    <code>label</code>, <code>dependent</code>, <code>concept</code>. Clangd keeps
+    <code>dependent~/~concept~/~member</code> via
+    <code>:semantic-tokens-faces-overrides</code>; <code>lsp-face-semhl-member</code> and
+    <code>lsp-face-semhl-label</code> remain publicly defined.</li>
+<li>Migrate <code>lsp-terraform-semantic-token-faces</code> to
+    <code>lsp-face-semhl-enum-member</code>.</li>
+<li>Migration note: users who previously customized
+    <code>lsp-face-semhl-constant</code> specifically to recolor enum members
+    should now customize <code>lsp-face-semhl-enum-member</code> instead.
+    <code>lsp-face-semhl-constant</code> still cascades to <code>number</code> and the
+    <code>readonly</code> token modifier. Users who customized
+    <code>lsp-face-semhl-type</code> expecting it NOT to propagate to
+    <code>struct~/~class~/~interface~/~enum~/~typeParameter~/~namespace</code>
+    now need to customize those child faces directly.</li>
+</ul>
+</li>
+<li>Fix crash (EXC<sub>CRASH</sub> / SIGABRT) on macOS when installing
+    language servers: replace <code>url-copy-file</code> in a background thread
+    with <code>make-process</code> (curl) + sentinel, avoiding the NS event-loop
+    thread-safety assertion in <code>ns_select_1</code></li>
+<li>Fix <code>lsp-clojure-extract-function</code> to always send the range-based
+    form required by clojure-lsp 2026.01+, and extract the selected
+    region when one is active (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/5023">#5023</a>)</li>
+<li>Fix PHP Language Server detection.</li>
+<li>Add support for <a href="https://github.com/prisma/language-tools">Prisma Schema
+    Language</a> via
+    <code>@prisma/language-server</code> (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/pull/5095">#5095</a>).</li>
+<li>Fix Magik server detection when JAR is missing.</li>
+</ul>
+<h2 id="1000">10.0.0<a class="headerlink" href="#1000" title="Permanent link">#</a></h2>
 <ul>
 <li>Fix <code>lsp-zig--zls-url</code> to use the new zigtools.org url (see:
     <a href="https://github.com/emacs-lsp/lsp-mode/issues/4445">#4445</a>)</li>
@@ -4265,6 +4425,7 @@
 <li>Add support for <code>~crates-lsp~</code></li>
 <li>Remove outdated Ruff option and add new lint-related options</li>
 <li>Add new Nextflow client customizations</li>
+<li>Add support for <code>~fish-lsp~</code></li>
 </ul>
 <h2 id="900">9.0.0<a class="headerlink" href="#900" title="Permanent link">#</a></h2>
 <ul>
@@ -4850,7 +5011,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 11, 2026</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 7, 2026</span>
       
     
   </small>
